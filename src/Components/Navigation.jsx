@@ -16,18 +16,18 @@ const Navigation = () => {
   return (
     <div className="navigation">
       <Button className="btn-login" variant="contained">
-        Login
+        Zaloguj
       </Button>
       <nav id="menu">
         <input type="checkbox" id="responsive-menu" onclick="updatemenu()" />
         <label></label>
         <ul>
           <li>
-            <a href="">Home</a>
+            <a href="">Strona Glowna</a>
           </li>
           <li>
             <a class="dropdown-arrow" href="">
-              Products
+              Produkty
             </a>
             <ul class="sub-menus">
               <li>
@@ -45,11 +45,11 @@ const Navigation = () => {
             </ul>
           </li>
           <li>
-            <a href="">About</a>
+            <a href="">O nas</a>
           </li>
           <li>
             <a class="dropdown-arrow" href="">
-              Services
+              Serwis
             </a>
             <ul class="sub-menus">
               <li>
@@ -64,7 +64,7 @@ const Navigation = () => {
             </ul>
           </li>
           <li>
-            <a href="">Contact</a>
+            <a href="">Kontakt</a>
           </li>
         </ul>
       </nav>
