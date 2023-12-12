@@ -20,7 +20,6 @@ const JobDetails = () => {
   return (
     <div className="jobdetails">
       <h2>Szczegóły pracy</h2>
-      <p>ID pracy: {jobDetails.id}</p>
       <p>Stanowisko pracy: {jobDetails.title}</p>
       <p>Opis {jobDetails.description}</p>
       <p>Tryb pracy: {jobDetails.workForm}</p>

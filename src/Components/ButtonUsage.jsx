@@ -4,8 +4,14 @@ import Button from "@mui/material/Button";
 
 export default function ButtonUsage() {
   return (
-    <Button id="btn-explore" variant="contained">
-      Przeglądaj oferty
-    </Button>
+    <div>
+      <Button id="btn-explore" variant="contained">
+        Zaloguj się
+      </Button>
+      LUB
+      <Button id="btn-explore" variant="contained">
+        Zarejestruj
+      </Button>
+    </div>
   );
 }
