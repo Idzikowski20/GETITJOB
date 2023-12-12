@@ -4,12 +4,12 @@ a {
 }
 
 .App {
+  min-height: 200vh;
   background: #121828;
-  text-align: center;
 }
 
 .logo {
-  width: 200px;
+  width: 150px;
 }
 
 .banner-img {
@@ -19,82 +19,76 @@ a {
 
 .App-header {
   background: #121828;
-  min-height: 100vh;
-  flex-direction: column;
-  align-items: center;
   font-size: calc(10px + 2vmin);
   color: rgb(0, 0, 0);
 }
 #btn-explore {
-  animation: btn-explore 3s ease 0s 2 normal forwards;
+  margin: 5px;
 }
-@keyframes btn-explore {
-  0%,
-  100% {
-    transform: translateX(0%);
-    transform-origin: 50% 50%;
-  }
 
-  15% {
-    transform: translateX(-30px) rotate(-6deg);
-  }
-
-  30% {
-    transform: translateX(15px) rotate(6deg);
-  }
-
-  45% {
-    transform: translateX(-15px) rotate(-3.6deg);
-  }
-
-  60% {
-    transform: translateX(9px) rotate(2.4deg);
-  }
-
-  75% {
-    transform: translateX(-6px) rotate(-1.2deg);
-  }
-}
 .welcome-center {
   color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  top: 300px;
+  top: 100px;
   position: relative;
+  text-align: center;
+  display: flow;
+}
+
+.select {
+  border: 5px solid grey;
+  background: #121828;
+  text-align: center;
+  color: grey;
+  height: 62px;
+  width: 302px;
 }
 
 .searchbar {
-  display: flex;
-  flex-wrap: wrap;
-  align-items:center;
-  justify-content: center;
+  top: 200px;
   position: relative;
-  top: 300px;
-  height: 100px;
-  padding: 20px;
-  margin: 50px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
 }
 
-.searchInput_Container {
+.offer-title {
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
   display: flex;
-  justify-content: center;
+}
+
+.offer-form-price {
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
   flex-wrap: wrap;
-  border-radius: 16px;
-  background: #191d27;
-  border: 1px solid #e0e0e0;
-  padding: 24px;
-  margin: 0 12px 32px;
+  display: flex;
+}
+
+.offer-title {
+  margin-bottom: 5px;
+  border-bottom: 1px solid grey;
+}
+
+.offer-description {
+  display: flex;
+}
+
+.offer-description p {
+  padding: 5px;
+  border-radius: 30px;
+  margin: 5px;
+  border: 1px solid #b1f1d1;
 }
 
 #searchInput {
-   border: 5px solid grey;
-    background: #121828;
-    text-align: center;
-    color: grey;
-    width: 500px;
-    height: 50px;
+  border: 5px solid grey;
+  background: #121828;
+  text-align: center;
+  color: grey;
+  height: 50px;
+  width: 302px;
 }
 
 #select-jobcategory {
@@ -116,30 +110,51 @@ a {
 }
 
 .templateContainer {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  border-radius: 16px;
-  background: #191d27;
-  border: 1px solid #e0e0e0;
-  padding: 24px;
-  margin: 0 12px 32px;
-  height: 1100px;
 }
 
 .template {
-  width: 100%;
-  padding: 5px;;
-  display: flex;
+  width: 600px;
   align-items: center;
-  justify-content: space-around;
-  position: relative;
-  box-shadow: 0px 0px 6px 0px #575757;
-  margin: 10px;
+  display: flex;
+}
+
+.template:hover {
+  align-items: center;
+  display: flex;
+  animation: template 2s ease 0s 1 alternate-reverse forwards;
+}
+
+@keyframes template {
+  0%,
+  100% {
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
+  }
+
+  15% {
+    transform: translateX(-30px) rotate(6deg);
+  }
+
+  30% {
+    transform: translateX(15px) rotate(-6deg);
+  }
+
+  45% {
+    transform: translateX(-15px) rotate(3.6deg);
+  }
+
+  60% {
+    transform: translateX(9px) rotate(-2.4deg);
+  }
+
+  75% {
+    transform: translateX(-6px) rotate(1.2deg);
+  }
 }
 
 .template img {
-  border-radius: 30px;
+  margin: 10px;
+  border-radius: 40px;
 }
 
 .template h4 {
@@ -147,16 +162,10 @@ a {
 }
 
 .template:hover {
-  background-color: #dfdbdb3d;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  position: relative;
-  box-shadow: 0px 0px 6px 0px #575757;
-  margin: 10px;
 }
 
 .jobcard-offer p {
+  margin: 0px;
   font-size: 20px;
   color: grey;
 }
@@ -167,34 +176,53 @@ a {
   border: 3px solid grey;
 }
 
+.price {
+  margin: 10px;
+}
+
+.workform {
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+
 h1 {
   font-size: 40px;
 }
 
 .navigation {
   padding: 10px;
-  border: 0.5px solid #e0e0e0;
   position: static;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-around;
   align-items: center;
-  width: 100%;
 }
 
 .jobdetails {
-  background-color: grey;
-  border: 3px solid grey;
+  background-color: #fff;
+  border: 3px solid #272222;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
+  width: 1000px;
+  height: 500px;
+}
+
+.joboffer-desc-container {
+  flex: auto;
+  display: flex;
 }
 
 .joboffer-desc {
+  height: 50px;
+  margin: 5px;
+  text-align: center;
+  max-width: 80px;
   padding: 5px;
-  border-radius: 15px;
+  border-radius: 20px;
   border: 1px solid #b1f1d1;
 }
 
@@ -287,7 +315,7 @@ h1 {
   background: #f2f2f2;
   color: #444444;
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 920px) {
   #menu {
     position: relative;
   }
@@ -303,48 +331,101 @@ h1 {
     max-width: 100%;
   }
 
+  .select {
+    background: #121828;
+    text-align: center;
+    color: grey;
+    border: 5px solid grey;
+  }
+
   .templateContainer {
+    display: flex;
+    flex-direction: column;
+    top: 100px;
+    position: relative;
     max-width: 100%;
-    height: 140vh;
+  }
+
+  .offer-moredetails {
+    height: 400px;
+    width: 100%;
+    position: relative;
+    top: 120px;
+  }
+
+  .offer-title {
+    display: flex;
+    align-items: center;
+  }
+
+  .offer-form-price {
+    text-align: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
   }
 
   .template {
     max-width: 100%;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     box-shadow: 0px 0px 6px 0px #575757;
-    margin: 5px;;
+    margin: 5px;
+  }
+
+  .joboffer-desc {
+    height: 50px;
+    margin: 5px;
+    text-align: center;
+    max-width: 80px;
+    padding: 5px;
+    border-radius: 20px;
+    border: 1px solid #b1f1d1;
+  }
+
+  .jobdetails {
+    background-color: #fff;
+    border: 3px solid #272222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .template h3 {
+    font-size: 18px;
   }
 
   .template p {
     font-size: 8px;
   }
 
-  .searchbar  {
+  .searchbar {
+    top: 5px;
     display: flex;
-    flex-wrap: wrap;
-    align-items:center;
     justify-content: center;
-    position: relative;
-    top: 300px;
-    height: 100px;
-    padding: 20px;
-    margin: 50px;
-    max-width: 100%;
   }
 
-  .searchbar p,h4{
+  .searchbar p,
+  h4 {
     font-size: 10px;
   }
 
-  .searchbar img{
+  .searchbar img {
     width: 30px;
     height: 30px;
   }
 
-  .searchInput_Container{
+  .searchInput_Container {
+    display: flex;
+    position: relative;
     margin: 0;
-    width: 340px;
+    width: 390px;
   }
 
   .banner-img {
@@ -365,9 +446,13 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    top: 300px;
+    top: 60px;
     position: relative;
     margin-bottom: 50px;
+  }
+
+  .welcome-center h1 {
+    font-size: 30px;
   }
 
   .logo {
@@ -414,14 +499,5 @@ h1 {
   }
   #menu input:checked ~ ul {
     display: block;
-  }
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
   }
 }

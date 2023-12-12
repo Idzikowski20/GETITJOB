@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "image": "https://logos.gpcdn.pl/loga-firm/20158029/9b030000-5dac-0015-8a7a-08db0dbac369_280x280.png?width=96",
+    "title": "Junior frontend developer",
+    "description": "Javascript",
+    "description1": "React.js",
+    "description2": "Next.js",
+    "description3": "HTML",
+    "description4": "CSS",
+    "workForm": "on-site",
+    "price": "4k-7k",
+    "value": "junior"
+  },
+  {
+    "id": 2,
+    "image": "https://logos.gpcdn.pl/loga-firm/20158029/9b030000-5dac-0015-8a7a-08db0dbac369_280x280.png?width=96",
+    "title": "Senior frontend developer",
+    "description": "Javascript",
+    "description1": "React.js",
+    "description2": "Dagre",
+    "description3": "Reactflow",
+    "description4": "Chart.js",
+    "workForm": "remote",
+    "price": "14k-30k",
+    "value": "senior"
+  },
+  {
+    "id": 3,
+    "image": "https://logos.gpcdn.pl/loga-firm/20158029/9b030000-5dac-0015-8a7a-08db0dbac369_280x280.png?width=96",
+    "title": "Mid frontend developer",
+    "description": "Javascript",
+    "description1": "Typescript",
+    "description2": "Typescript",
+    "description3": "Typescript",
+    "description4": "Typescript",
+    "workForm": "ron-site",
+    "price": "12k-17k",
+    "value": "mid"
+  },
+  {
+    "id": 4,
+    "image": "https://logos.gpcdn.pl/loga-firm/20158029/9b030000-5dac-0015-8a7a-08db0dbac369_280x280.png?width=96",
+    "title": "UX/UI",
+    "description": "Javascript",
+    "description1": "Typescript",
+    "description2": "Typescript",
+    "description3": "Typescript",
+    "description4": "Typescript",
+    "workForm": "hybrid",
+    "price": "9k-14k",
+    "value": "ux/ui"
+  },
+  {
+    "id": 5,
+    "image": "https://logos.gpcdn.pl/loga-firm/20158029/9b030000-5dac-0015-8a7a-08db0dbac369_280x280.png?width=96",
+    "title": "Helpdesk",
+    "description": "Javascript",
+    "description1": "Typescript",
+    "description2": "Typescript",
+    "description3": "Typescript",
+    "description4": "Typescript",
+    "workForm": "hybrid",
+    "price": "5k-7k",
+    "value": "helpdesk"
+  },
+  {
+    "id": 6,
+    "image": "https://logos.gpcdn.pl/loga-firm/20158029/9b030000-5dac-0015-8a7a-08db0dbac369_280x280.png?width=96",
+    "title": "HR It",
+    "description": "Javascript",
+    "description1": "Typescript",
+    "description2": "Typescript",
+    "description3": "Typescript",
+    "description4": "Typescript",
+    "workForm": "remote",
+    "price": "9k-13k",
+    "value": "hr"
+  }
+]
