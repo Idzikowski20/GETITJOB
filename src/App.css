@@ -4,7 +4,7 @@ a {
 }
 
 .App {
-  min-height: 200vh;
+  min-height: 400vh;
   background: #121828;
 }
 
@@ -35,6 +35,7 @@ a {
 }
 
 .select {
+  border-radius: 30px;
   border: 5px solid grey;
   background: #121828;
   text-align: center;
@@ -51,24 +52,40 @@ a {
   justify-content: center;
 }
 
-.offer-title {
-  justify-content: flex-start;
-  align-items: center;
-  text-align: center;
+.offer-top {
+  width: 100%;
+  border-bottom: 1px solid grey;
   display: flex;
+    text-align: center;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.offer-location {
 }
 
 .offer-form-price {
-  justify-content: flex-end;
-  align-items: center;
-  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-end;
   flex-wrap: wrap;
   display: flex;
 }
 
+.offer-form-price p {
+  font-size: 20px;
+}
+
 .offer-title {
-  margin-bottom: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   border-bottom: 1px solid grey;
+}
+
+.price p {
+  color: #9bdf5b;
+margin-bottom: 0px;
 }
 
 .offer-description {
@@ -83,6 +100,7 @@ a {
 }
 
 #searchInput {
+  border-radius: 30px;
   border: 5px solid grey;
   background: #121828;
   text-align: center;
@@ -109,52 +127,27 @@ a {
   width: 302px;
 }
 
-.templateContainer {
+.searchInput_Container {
+  margin-bottom: 50px;
 }
 
-.template {
-  width: 600px;
-  align-items: center;
+.offer-image-title {
+  min-width: 200px;
+  max-width: 250px;
+}
+
+.offer-top:hover {
+  width: 100%;
+  border: 4px dotted rgb(56, 165, 238);
   display: flex;
-}
-
-.template:hover {
-  align-items: center;
-  display: flex;
-  animation: template 2s ease 0s 1 alternate-reverse forwards;
-}
-
-@keyframes template {
-  0%,
-  100% {
-    transform: translateX(0%);
-    transform-origin: 50% 50%;
-  }
-
-  15% {
-    transform: translateX(-30px) rotate(6deg);
-  }
-
-  30% {
-    transform: translateX(15px) rotate(-6deg);
-  }
-
-  45% {
-    transform: translateX(-15px) rotate(3.6deg);
-  }
-
-  60% {
-    transform: translateX(9px) rotate(-2.4deg);
-  }
-
-  75% {
-    transform: translateX(-6px) rotate(1.2deg);
-  }
+    text-align: center;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .template img {
   margin: 10px;
-  border-radius: 40px;
+  border-radius: 10px;
 }
 
 .template h4 {
@@ -177,7 +170,14 @@ a {
 }
 
 .price {
+  font-weight: 800;
+  color: grey;
   margin: 10px;
+}
+
+.offer-price-form-company {
+  min-width: 100px;
+max-width: 150px;
 }
 
 .workform {
@@ -321,7 +321,7 @@ h1 {
   }
 
   .App {
-    max-width: 100%;
+    min-width: 390px;
   }
 
   .App-header {
@@ -332,6 +332,7 @@ h1 {
   }
 
   .select {
+    border-radius: 30px;
     background: #121828;
     text-align: center;
     color: grey;
@@ -353,6 +354,19 @@ h1 {
     top: 120px;
   }
 
+  .offer-top {
+    border-bottom: none;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .offer-location {
+    position: static;
+  }
+
   .offer-title {
     display: flex;
     align-items: center;
@@ -369,8 +383,8 @@ h1 {
   .template {
     max-width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: start;
+    align-items: flex-start;
     box-shadow: 0px 0px 6px 0px #575757;
     margin: 5px;
   }
@@ -383,6 +397,12 @@ h1 {
     padding: 5px;
     border-radius: 20px;
     border: 1px solid #b1f1d1;
+  }
+
+  .offer-description {
+    margin: 20px;
+    flex-direction: column;
+    display: flex;
   }
 
   .jobdetails {
@@ -417,15 +437,15 @@ h1 {
   }
 
   .searchbar img {
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
   }
 
   .searchInput_Container {
     display: flex;
     position: relative;
     margin: 0;
-    width: 390px;
+    width: 100%;
   }
 
   .banner-img {
