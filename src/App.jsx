@@ -1,4 +1,3 @@
-// App.jsx
 import "./App.css";
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
@@ -61,7 +60,9 @@ function App() {
               path="/job/:jobId"
               element={
                 <div className="offer-moredetails">
-                  <Link to="/">👈 Wróć do ofert</Link>
+                  <div className="btn-back">
+                    <Link to="/">👈 Wróć do ofert</Link>
+                  </div>
                   <JobDetails data={data} />
                 </div>
               }
