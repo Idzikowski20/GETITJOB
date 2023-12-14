@@ -4,7 +4,7 @@ a {
 }
 
 .App {
-  min-height: 200vh;
+  min-height: 400vh;
   background: #121828;
 }
 
@@ -35,6 +35,7 @@ a {
 }
 
 .select {
+  border-radius: 30px;
   border: 5px solid grey;
   background: #121828;
   text-align: center;
@@ -60,27 +61,38 @@ a {
   text-align: center;
   justify-content: flex-start;
   align-items: center;
+    text-align: center;
+    justify-content: flex-start;
+    align-items: center;
+
 }
 
 .offer-location {
 }
 
 .offer-form-price {
-  justify-content: flex-end;
-  align-items: center;
-  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-end;
   flex-wrap: wrap;
   display: flex;
 }
 
+.offer-form-price p {
+  font-size: 20px;
+}
+
 .offer-title {
-  margin-bottom: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   border-bottom: 1px solid grey;
 }
 
 .price p {
   color: #9bdf5b;
   margin-bottom: 0px;
+margin-bottom: 0px;
 }
 
 .offer-description {
@@ -96,6 +108,7 @@ a {
 }
 
 #searchInput {
+  border-radius: 30px;
   border: 5px solid grey;
   background: #121828;
   text-align: center;
@@ -122,14 +135,15 @@ a {
   width: 302px;
 }
 
-.templateContainer {
+.searchInput_Container {
+  margin-bottom: 50px;
 }
 
-.template {
-  width: 600px;
-  align-items: center;
-  display: flex;
+.offer-image-title {
+  min-width: 200px;
+  max-width: 250px;
 }
+
 
 .offer-image-title img {
   top: 20px;
@@ -142,11 +156,18 @@ a {
   text-align: center;
   justify-content: flex-start;
   align-items: center;
+.offer-top:hover {
+  width: 100%;
+  border: 4px dotted rgb(56, 165, 238);
+  display: flex;
+    text-align: center;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .template img {
   margin: 10px;
-  border-radius: 40px;
+  border-radius: 10px;
 }
 
 .template h4 {
@@ -169,12 +190,16 @@ a {
 }
 
 .price {
+  font-weight: 800;
+  color: grey;
   margin: 10px;
 }
 
 .offer-price-form-company {
   min-width: 100px;
   max-width: 150px;
+max-width: 150px;
+
 }
 
 .workform {
@@ -336,7 +361,7 @@ h2 {
   }
 
   .App {
-    max-width: 100%;
+    min-width: 390px;
   }
 
   .App-header {
@@ -347,6 +372,7 @@ h2 {
   }
 
   .select {
+    border-radius: 30px;
     background: #121828;
     text-align: center;
     color: grey;
@@ -367,6 +393,19 @@ h2 {
     width: 100%;
     position: relative;
     top: 120px;
+  }
+
+  .offer-top {
+    border-bottom: none;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .offer-location {
+    position: static;
   }
 
   .offer-title {
@@ -411,6 +450,14 @@ h2 {
     display: flex;
   }
 
+  .jobdetails {
+    background-color: #fff;
+    border: 3px solid #272222;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+  }
+
   .jobdetails-container {
   }
 
@@ -438,8 +485,8 @@ h2 {
   }
 
   .searchbar img {
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
   }
 
   .searchInput_Container {
