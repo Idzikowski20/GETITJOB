@@ -15,10 +15,18 @@ const JobList = ({ data, filterJobs }) => {
               <div className="offer-title">
                 <h3>{val.title}</h3>
               </div>
-              <div className="offer-description">
-                <p>{val.description}</p>
-                <p>{val.description}</p>
-                <p>{val.description}</p>
+              <div className="offer-form-price">
+                <div className="offer-location">
+                  <p>📍 {val.location}</p>
+                </div>
+                <div className="offer-price-form-company">
+                  <p>💻 {val.workForm}</p>
+                  <div className="price">
+                    <p>{val.price}</p>
+                    <span> {"ZŁ (B2B) 💸"}</span>
+                  </div>
+                  <p>🏙 {val.company}</p>
+                </div>
               </div>
             </div>
             <div className="offer-form-price">
