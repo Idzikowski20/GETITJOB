@@ -23,52 +23,52 @@ const Navigation = () => {
         <label></label>
         <ul className="menu-background">
           <li>
-            <a href="">Strona Glowna</a>
+            <a href="/">Strona Glowna</a>
           </li>
           <li>
-            <a class="dropdown-arrow" href="">
+            <a class="dropdown-arrow" href="/">
               Produkty
             </a>
             <ul class="sub-menus">
               <li>
-                <a href="">Products 1</a>
+                <a href="/">Products 1</a>
               </li>
               <li>
-                <a href="">Products 2</a>
+                <a href="/">Products 2</a>
               </li>
               <li>
-                <a href="">Products 3</a>
+                <a href="/">Products 3</a>
               </li>
               <li>
-                <a href="">Products 4</a>
+                <a href="/">Products 4</a>
               </li>
             </ul>
           </li>
           <li>
-            <a href="">O nas</a>
+            <a href="/">O nas</a>
           </li>
           <li>
-            <a class="dropdown-arrow" href="">
+            <a class="dropdown-arrow" href="/">
               Serwis
             </a>
             <ul class="sub-menus">
               <li>
-                <a href="">Services 1</a>
+                <a href="/">Services 1</a>
               </li>
               <li>
-                <a href="">Services 2</a>
+                <a href="/">Services 2</a>
               </li>
               <li>
-                <a href="">Services 3</a>
+                <a href="/">Services 3</a>
               </li>
             </ul>
           </li>
           <li>
-            <a href="">Kontakt</a>
+            <a href="/">Kontakt</a>
           </li>
         </ul>
       </nav>
-      <a href="../app.jsx">
+      <a href="/">
         <img src={logo} className="logo" alt="logo" />
       </a>
     </div>
