@@ -21,7 +21,7 @@ const Navigation = () => {
       <nav id="menu">
         <input type="checkbox" id="responsive-menu" onclick="updatemenu()" />
         <label></label>
-        <ul>
+        <ul className="menu-background">
           <li>
             <a href="">Strona Glowna</a>
           </li>

@@ -9,6 +9,11 @@
     "description1": "React.js",
     "description2": "Next.js",
     "description3": "HTML",
+    "description4": "CSS",
+    "workForm": "hybrydowa",
+    "price": "4K-7K",
+    "value": "junior",
+    "agreement": "(uOP)"
     "workForm": "zdalna",
     "price": "4000-7000",
     "value": "junior"
@@ -24,6 +29,9 @@
     "description2": "Next.js",
     "description3": "HTML",
     "workForm": "zdalna",
+    "price": "12K-17K",
+    "value": "mid",
+    "agreement": "(B2B)"
     "price": "12000-17000",
     "value": "mid"
   },
@@ -38,8 +46,9 @@
     "description2": "Next.js",
     "description3": "HTML",
     "workForm": "stacjonarna",
-    "price": "19000-30000",
-    "value": "senior"
+    "price": "19K-30K",
+    "value": "senior",
+    "agreement": "(B2B)"
   },
   {
     "id": 4,
@@ -52,8 +61,9 @@
     "description2": "Appium",
     "description3": "CI/CD",
     "workForm": "hybrydowa",
-    "price": "1500-20000",
-    "value": "senior"
+    "price": "15K-20K",
+    "value": "senior",
+    "agreement": "(B2B)"
   },
   {
     "id": 5,
@@ -66,8 +76,9 @@
     "description2": "SCSS",
     "description3": "TypeScript",
     "workForm": "zdalna",
-    "price": "12000-17000",
-    "value": "senior"
+    "price": "12K-17K",
+    "value": "senior",
+    "agreement": "(uOP)"
   },
   {
     "id": 6,
@@ -80,8 +91,9 @@
     "description2": "GIT",
     "description3": "API",
     "workForm": "stacjonarna",
-    "price": "15000-21000",
-    "value": "senior"
+    "price": "15K-21K",
+    "value": "senior",
+    "agreement": "(uOP)"
   },
   {
     "id": 7,
@@ -94,8 +106,9 @@
     "description2": "Next.js",
     "description3": "HTML",
     "workForm": "hybrydowa",
-    "price": "4000-7000",
-    "value": "junior"
+    "price": "4K-7K",
+    "value": "junior",
+    "agreement": "(uOP)"
   },
   {
     "id": 8,
@@ -108,8 +121,9 @@
     "description2": "Next.js",
     "description3": "HTML",
     "workForm": "zdalna",
-    "price": "12000-17000",
-    "value": "mid"
+    "price": "12K-17K",
+    "value": "mid",
+    "agreement": "(B2B)"
   },
   {
     "id": 9,
@@ -122,8 +136,9 @@
     "description2": "Next.js",
     "description3": "HTML",
     "workForm": "stacjonarna",
-    "price": "19000-30000",
-    "value": "senior"
+    "price": "19K-30K",
+    "value": "senior",
+    "agreement": "(B2B)"
   },
   {
     "id": 10,
@@ -136,8 +151,9 @@
     "description2": "Next.js",
     "description3": "HTML",
     "workForm": "hybrydowa",
-    "price": "4000-7000",
-    "value": "junior"
+    "price": "4K-7K",
+    "value": "junior",
+    "agreement": "(uOP)"
   },
   {
     "id": 11,
@@ -150,8 +166,9 @@
     "description2": "Next.js",
     "description3": "HTML",
     "workForm": "zdalna",
-    "price": "12000-17000",
-    "value": "mid"
+    "price": "12K-17K",
+    "value": "mid",
+    "agreement": "(uOP)"
   },
   {
     "id": 12,
@@ -164,8 +181,9 @@
     "description2": "Next.js",
     "description3": "HTML",
     "workForm": "stacjonarna",
-    "price": "19000-30000",
-    "value": "senior"
+    "price": "19K-30K",
+    "value": "senior",
+    "agreement": "(B2B)"
   },
   {
     "id": 13,
@@ -178,8 +196,9 @@
     "description2": "Next.js",
     "description3": "HTML",
     "workForm": "hybrydowa",
-    "price": "4000-7000",
-    "value": "junior"
+    "price": "4K-7K",
+    "value": "junior",
+    "agreement": "(uOP)"
   },
   {
     "id": 14,
@@ -192,8 +211,9 @@
     "description2": "Next.js",
     "description3": "HTML",
     "workForm": "zdalna",
-    "price": "12000-17000",
-    "value": "mid"
+    "price": "12K-17K",
+    "value": "mid",
+    "agreement": "(uOP)"
   },
   {
     "id": 15,
@@ -206,7 +226,23 @@
     "description2": "Next.js",
     "description3": "HTML",
     "workForm": "stacjonarna",
-    "price": "19000-30000",
-    "value": "senior"
+    "price": "19K-30K",
+    "value": "senior",
+    "agreement": "(B2B)"
+  },
+  {
+    "id": 16,
+    "image": "https://logos.gpcdn.pl/loga-firm/20012477/2c580000-43a8-f403-3658-08d83d36ef79_280x280.jpg?width=96",
+    "title": "Tester Manualny",
+    "company": "TUZ",
+    "location": "Kraków",
+    "description": "Javascript",
+    "description1": "React.js",
+    "description2": "Next.js",
+    "description3": "HTML",
+    "workForm": "zdalna",
+    "price": "4K-6K",
+    "value": "tester",
+    "agreement": "(uOP)"
   }
 ]

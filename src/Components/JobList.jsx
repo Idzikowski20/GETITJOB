@@ -20,10 +20,10 @@ const JobList = ({ data, filterJobs }) => {
                 <div className="offer-price-form-company">
                   <p>💻 {val.workForm}</p>
                   <div className="price">
-                    <p>{val.price}</p>
-                    <span> {"ZŁ (B2B) 💸"}</span>
+                    <p>{val.price} PLN</p>
+                    <span>{val.agreement}💸</span>
                   </div>
-                  <p>🏙 {val.company}</p>
+                  <p>🕵️‍♂️ {val.company}</p>
                 </div>
               </div>
             </div>

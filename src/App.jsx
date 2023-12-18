@@ -12,6 +12,7 @@ import JobList from "./Components/JobList";
 import JobDetails from "./Components/JobDetails";
 import data from "./Components/JobOfferts.json";
 import SearchBar from "./Components/Searchbar";
+import H1Welcome from "./Components/H1Welcome";
 <meta name="viewport" content="initial-scale=1, width=device-width" />;
 
 function App() {
@@ -34,10 +35,7 @@ function App() {
       <Navigation />
       <div className="welcome-center">
         <img className="banner-img" src={banner} alt="banner"></img>
-        <h1>
-          GETITJOB!👋 Praca z widełkami - Zaoszczędź czas i znajdź szybko pracę
-          w sektorze IT 👨‍💻
-        </h1>
+        <H1Welcome />
         <ButtonUsage />
       </div>
       <div className="searchbar">
