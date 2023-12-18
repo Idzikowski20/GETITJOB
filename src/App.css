@@ -4,7 +4,7 @@ a {
 }
 
 .App {
-  min-height: 200vh;
+  max-height: 500vh;
   background: #121828;
 }
 
@@ -26,6 +26,48 @@ a {
   margin: 5px;
 }
 
+.btn-back2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-back a {
+  top: -70px;
+  left: 0;
+  position: relative;
+  text-align: center;
+  border-radius: 40px;
+  margin: 10px;
+  padding: 10px;
+  border: 2px dotted rgb(43, 110, 155);
+}
+
+.btn-back2 a {
+  top: -20px;
+  left: 0;
+  position: relative;
+  text-align: center;
+  border-radius: 40px;
+  margin: 10px;
+  padding: 10px;
+  border: 2px dotted rgb(43, 110, 155);
+}
+
+.btn-back a:hover {
+  text-align: center;
+  border-radius: 40px;
+  margin: 10px;
+  padding: 10px;
+  border: 2px dotted rgb(47, 147, 214);
+}
+
 .welcome-center {
   color: #fff;
   top: 100px;
@@ -34,7 +76,17 @@ a {
   display: flow;
 }
 
+.searchbar-desc {
+  font-weight: 800;
+  color: #fff;
+  justify-content: space-around;
+  width: 100%;
+  text-align: center;
+  display: flex;
+}
+
 .select {
+  border-radius: 30px;
   border: 5px solid grey;
   background: #121828;
   text-align: center;
@@ -43,17 +95,30 @@ a {
   width: 302px;
 }
 
+.search-icon {
+  margin-right: 10px;
+  top: 20px;
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+
 .searchbar {
+  min-height: 110vh;
   background: #121828;
   top: 200px;
   position: relative;
   margin-top: 50px;
-  margin-bottom: 50px;
   display: flex;
   justify-content: center;
 }
+.offer-h1 {
+  text-align: center;
+}
 
 .offer-top {
+  border-radius: 40px;
+  background: #1e2433;
   width: 100%;
   border-bottom: 1px solid grey;
   display: flex;
@@ -62,20 +127,135 @@ a {
   align-items: center;
 }
 
+.offer-mid-container {
+  margin-top: 20px;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+  display: flex;
+}
+
+.offer-aplikuj-container {
+  margin-top: 10px;
+  margin-bottom: 50px;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+  display: flex;
+}
+
+.offer-aplikuj {
+  margin: 30px;
+  border-radius: 30px;
+  height: 100%;
+  width: 100%;
+  background: #1e2433;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.offer-aplikuj:hover {
+  margin: 30px;
+  border-radius: 30px;
+  height: 100%;
+  width: 100%;
+  background: #1e2433;
+  border-top: 4px solid grey;
+  border-bottom: 4px solid grey;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.offer-mid {
+  margin: 30px;
+  border-radius: 30px;
+  height: 100%;
+  width: 100%;
+  background: #1e2433;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.offer-mid:hover {
+  margin: 30px;
+  border-radius: 30px;
+  height: 100%;
+  width: 100%;
+  background: #1e2433;
+  border-top: 4px solid grey;
+  border-bottom: 4px solid grey;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.template_Container2 {
+  height: 100%;
+}
+
 .offer-location {
 }
 
 .offer-form-price {
-  justify-content: flex-end;
-  align-items: center;
-  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-end;
   flex-wrap: wrap;
   display: flex;
 }
 
+.offer-form-price p {
+  font-size: 20px;
+}
+
 .offer-title {
-  margin-bottom: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   border-bottom: 1px solid grey;
+}
+
+.offer-moredetails {
+  min-height: 100vh;
+  align-items: normal;
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+  color: #fff;
+  width: 90%;
+  position: relative;
+}
+
+.jobdetails-container {
+  border: 1px solid grey;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: flex-start;
+  padding: 10px;
+}
+
+.jobdetails-title {
+  display: flex;
+  justify-content: space-between;
 }
 
 .price p {
@@ -84,18 +264,20 @@ a {
 }
 
 .offer-description {
-  margin: 10px;
+  justify-content: center;
   display: flex;
+  align-items: center;
 }
 
 .offer-description p {
   padding: 5px;
   border-radius: 30px;
-  margin: 5px;
+  margin: 15px;
   border: 1px solid #b1f1d1;
 }
 
 #searchInput {
+  border-radius: 30px;
   border: 5px solid grey;
   background: #121828;
   text-align: center;
@@ -122,22 +304,25 @@ a {
   width: 302px;
 }
 
-.templateContainer {
+.searchInput_Container {
+  margin-bottom: 50px;
 }
 
-.template {
-  width: 600px;
-  align-items: center;
-  display: flex;
+.offer-image-title {
+  min-width: 200px;
+  max-width: 250px;
 }
 
 .offer-image-title img {
-  top: 20px;
   position: relative;
+  top: 20px;
 }
 
-.template:hover {
-  align-items: center;
+.offer-top:hover {
+  border-radius: 40px;
+  background: #1e2433;
+  width: 100%;
+  border-bottom: 5px solid rgb(22, 137, 214);
   display: flex;
   text-align: center;
   justify-content: flex-start;
@@ -146,7 +331,7 @@ a {
 
 .template img {
   margin: 10px;
-  border-radius: 40px;
+  border-radius: 10px;
 }
 
 .template h4 {
@@ -169,10 +354,13 @@ a {
 }
 
 .price {
+  font-weight: 800;
+  color: grey;
   margin: 10px;
 }
 
 .offer-price-form-company {
+  margin-right: 20px;
   min-width: 100px;
   max-width: 150px;
 }
@@ -184,7 +372,37 @@ a {
 }
 
 h1 {
-  font-size: 40px;
+  color: hsl(0, 0%, 28%);
+  font-size: 30px;
+  font-weight: bold !important;
+  font-family: monospace;
+  letter-spacing: 7px !important;
+  text-transform: uppercase;
+}
+
+h1 {
+  padding: 64px;
+  background: linear-gradient(
+    to right,
+    #2366f5 10%,
+    hsl(0, 0%, 100%) 0,
+    hsl(0, 0%, 100%) 20%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 4s infinite linear;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  50% {
+    background-position: 650px;
+  }
+  100% {
+    background-position: 1300px;
+  }
 }
 
 .navigation {
@@ -196,34 +414,16 @@ h1 {
   align-items: center;
 }
 
-.offer-moredetails {
-  width: -webkit-fill-available;
-  color: #fff;
-  overflow-y: hidden;
-  background: #121828;
+.jobdetails {
+  background-color: #fff;
+  border: 3px solid #272222;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   position: relative;
-  min-height: 100vh;
-  max-height: 150vh;
-}
-
-.offer-moredetails a,
-h2 {
-}
-.jobdetails-top {
-  border: 1px solid #474c59;
-  display: flex;
-  margin: 10px;
-  padding: 5px;
-}
-
-.jobdetails-title {
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
+  width: 1000px;
+  height: 500px;
 }
 
 .joboffer-desc-container {
@@ -309,7 +509,7 @@ h2 {
   height: auto;
   overflow: hidden;
   width: 170px;
-  background: #1b75eb;
+  background: #232835;
   position: absolute;
   z-index: 99;
   display: none;
@@ -332,11 +532,19 @@ h2 {
 }
 @media screen and (max-width: 920px) {
   #menu {
+    right: 30px;
     position: relative;
   }
 
+  h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px;
+    font-size: 19px;
+  }
+
   .App {
-    max-width: 100%;
+    min-width: 390px;
   }
 
   .App-header {
@@ -346,7 +554,19 @@ h2 {
     max-width: 100%;
   }
 
+  .btn-back a {
+    top: -30px;
+    left: 110px;
+    position: absolute;
+    text-align: center;
+    border-radius: 40px;
+    margin: 10px;
+    padding: 10px;
+    border: 2px dotted rgb(43, 110, 155);
+  }
+
   .select {
+    border-radius: 30px;
     background: #121828;
     text-align: center;
     color: grey;
@@ -362,11 +582,23 @@ h2 {
   }
 
   .offer-moredetails {
-    color: #fff;
     height: 400px;
     width: 100%;
     position: relative;
     top: 120px;
+  }
+
+  .offer-top {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .offer-location {
+    right: 50px;
+    position: relative;
   }
 
   .offer-title {
@@ -374,24 +606,25 @@ h2 {
     align-items: center;
   }
 
+  .price p {
+    font-size: 15px;
+  }
+  .price span {
+    font-size: 10px;
+  }
+
   .offer-form-price {
     text-align: center;
     flex-direction: column;
     flex-wrap: wrap;
     display: flex;
-    align-items: center;
-  }
-
-  .price span {
-    font-size: 10px;
+    align-items: flex-end;
   }
 
   .template {
     max-width: 100%;
-    display: flex;
     justify-content: start;
     align-items: flex-start;
-    box-shadow: 0px 0px 6px 0px #575757;
     margin: 5px;
   }
 
@@ -406,16 +639,21 @@ h2 {
   }
 
   .offer-description {
-    margin: 20px;
+    justify-content: center;
+    margin: 10px;
+    display: flex;
+  }
+
+  .jobdetails {
+    background-color: #fff;
+    border: 3px solid #272222;
+    display: flex;
     flex-direction: column;
-    display: flex;
-  }
-
-  .jobdetails-container {
-  }
-
-  .jobdetails-top {
-    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
   }
 
   .template h3 {
@@ -438,8 +676,12 @@ h2 {
   }
 
   .searchbar img {
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .template_Container {
+    margin-top: 15px;
   }
 
   .searchInput_Container {
@@ -449,13 +691,13 @@ h2 {
     width: 100%;
   }
 
-  .banner-img {
-    width: 247.46px;
-    height: 192px;
+  .searchInput_Container img {
+    display: none;
   }
 
   .banner-img {
-    width: 350px;
+    width: 247.46px;
+    height: 192px;
   }
 
   .navigtion {
@@ -519,6 +761,11 @@ h2 {
     content: "\00d7";
   }
   #menu input:checked ~ ul {
-    display: block;
+    display: inline-table;
+  }
+
+  .menu-background {
+    background: #1e2433;
+    border-radius: 20px;
   }
 }

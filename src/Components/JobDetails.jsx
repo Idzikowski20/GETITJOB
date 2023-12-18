@@ -1,7 +1,7 @@
 // JobDetails.jsx
 import React, { useState, useEffect, useRef } from "react";
 import Button from "@mui/material/Button";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import data from "./JobOfferts.json";
 
 const JobDetails = () => {
@@ -26,30 +26,47 @@ const JobDetails = () => {
   }
 
   return (
-    <div ref={ref} className="jobdetails-container">
-      <h2>Szczegóły pracy</h2>
-      <div className="jobdetails-top">
-        <div>
-          <img src={jobDetails.image} alt="logo company" />
+    <div ref={ref} className="template_Container2">
+      <div className="template">
+        <div className="offer-top">
+          <div className="offer-image-title">
+            <img src={jobDetails.image} alt="logo company" />
+            <h3>{jobDetails.title}</h3>
+          </div>
+          <div className="offer-form-price">
+            <div className="offer-location">
+              <p>📍 {jobDetails.location}</p>
+            </div>
+            <div className="offer-price-form-company">
+              <p>💻 {jobDetails.workForm}</p>
+              <div className="price">
+                <p>{jobDetails.price} PLN</p>
+                <span>{jobDetails.agreement}💸</span>
+              </div>
+              <p>🕵️‍♂️ {jobDetails.company}</p>
+            </div>
+          </div>
         </div>
-        <div className="jobdetails-title">
-          <div>{jobDetails.company}</div>
-          <div>{jobDetails.title}</div>
-          <div>📍 {jobDetails.location}</div>
-        </div>
-        <div>
-          <Button id="btn-explore" variant="contained">
-            Aplikuj
-          </Button>
-        </div>
-      </div>
-      <div className="jobdetails-description">
         <div className="offer-description">
+          <span>Wymagane technologie:</span>
           <p>{jobDetails.description}</p>
           <p>{jobDetails.description1}</p>
           <p>{jobDetails.description2}</p>
           <p>{jobDetails.description3}</p>
         </div>
+      </div>
+      <div className="offer-mid-container">
+        <div className="offer-mid">{jobDetails.agreement}</div>
+        <div className="offer-mid">{jobDetails.agreement}</div>
+      </div>
+      <div className="offer-h1">
+        <h1>Aplikuj na to stanowisko</h1>
+      </div>
+      <div className="offer-aplikuj-container">
+        <div className="offer-aplikuj">{jobDetails.agreement}</div>
+      </div>
+      <div className="btn-back2">
+        <Link to="/">👈 Wróć do ofert</Link>
       </div>
     </div>
   );
