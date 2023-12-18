@@ -4,7 +4,7 @@ a {
 }
 
 .App {
-  max-height: 500vh;
+  min-height: 400vh;
   background: #121828;
 }
 
@@ -125,6 +125,10 @@ a {
   text-align: center;
   justify-content: flex-start;
   align-items: center;
+    text-align: center;
+    justify-content: flex-start;
+    align-items: center;
+
 }
 
 .offer-mid-container {
@@ -261,6 +265,7 @@ a {
 .price p {
   color: #9bdf5b;
   margin-bottom: 0px;
+margin-bottom: 0px;
 }
 
 .offer-description {
@@ -313,6 +318,7 @@ a {
   max-width: 250px;
 }
 
+
 .offer-image-title img {
   position: relative;
   top: 20px;
@@ -327,6 +333,13 @@ a {
   text-align: center;
   justify-content: flex-start;
   align-items: center;
+.offer-top:hover {
+  width: 100%;
+  border: 4px dotted rgb(56, 165, 238);
+  display: flex;
+    text-align: center;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .template img {
@@ -363,6 +376,8 @@ a {
   margin-right: 20px;
   min-width: 100px;
   max-width: 150px;
+max-width: 150px;
+
 }
 
 .workform {
@@ -590,6 +605,19 @@ h1 {
 
   .offer-top {
     width: 100%;
+    border-bottom: none;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .offer-location {
+    position: static;
+  }
+
+  .offer-title {
     display: flex;
     text-align: center;
     justify-content: flex-start;
@@ -647,6 +675,15 @@ h1 {
   .jobdetails {
     background-color: #fff;
     border: 3px solid #272222;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+  }
+
+  .jobdetails-container {
+  }
+
+  .jobdetails-top {
     display: flex;
     flex-direction: column;
     align-items: center;

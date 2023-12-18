@@ -14,6 +14,9 @@
     "price": "4K-7K",
     "value": "junior",
     "agreement": "(uOP)"
+    "workForm": "zdalna",
+    "price": "4000-7000",
+    "value": "junior"
   },
   {
     "id": 2,
@@ -25,11 +28,12 @@
     "description1": "React.js",
     "description2": "Next.js",
     "description3": "HTML",
-    "description4": "CSS",
     "workForm": "zdalna",
     "price": "12K-17K",
     "value": "mid",
     "agreement": "(B2B)"
+    "price": "12000-17000",
+    "value": "mid"
   },
   {
     "id": 3,
@@ -41,7 +45,6 @@
     "description1": "React.js",
     "description2": "Next.js",
     "description3": "HTML",
-    "description4": "CSS",
     "workForm": "stacjonarna",
     "price": "19K-30K",
     "value": "senior",
