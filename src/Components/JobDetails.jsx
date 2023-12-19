@@ -4,6 +4,8 @@ import Button from "@mui/material/Button";
 import { useParams, Link } from "react-router-dom";
 import data from "./JobOfferts.json";
 import { Input } from "@mui/material";
+import companyimage from "../images/companyimage.png";
+import HR from "../images/HR.png";
 
 const JobDetails = () => {
   const ref = useRef(null);
@@ -38,6 +40,7 @@ const JobDetails = () => {
             <div className="offer-location">
               <p>📍 {jobDetails.location}</p>
             </div>
+            <div></div>
             <div className="offer-price-form-company">
               <p>💻 {jobDetails.workForm}</p>
               <div className="price">
@@ -57,7 +60,7 @@ const JobDetails = () => {
         </div>
       </div>
       <div className="offer-mid-container">
-        <div className="offer-mid">
+        <div className="offer-mid2">
           <div className="offer-mid-card">
             <h2>Twoje Zadania 👨‍💻</h2>
             <p>✔️{jobDetails.responsibilities}</p>
@@ -66,6 +69,8 @@ const JobDetails = () => {
             <p>✔️{jobDetails.responsibilities4}</p>
             <p>✔️{jobDetails.responsibilities5}</p>
           </div>
+        </div>
+        <div className="offer-mid">
           <div className="offer-mid-card">
             <h2>Nasze Wymagania 🤝</h2>
             <p>✔️{jobDetails.requirements}</p>
@@ -77,7 +82,7 @@ const JobDetails = () => {
             <p>✔️{jobDetails.requirements7}</p>
           </div>
         </div>
-        <div className="offer-mid">
+        <div className="offer-mid2">
           <div className="offer-mid-card">
             <h2>Co oferujemy🤑🏆 </h2>
             <p>✔️{jobDetails.Whatweoffer}</p>
@@ -85,21 +90,38 @@ const JobDetails = () => {
             <p>✔️{jobDetails.Whatweoffer3}</p>
             <p>✔️{jobDetails.Whatweoffer4}</p>
             <p>✔️{jobDetails.Whatweoffer5}</p>
-            <p>✔️{jobDetails.Whatweoffer6}</p>
           </div>
         </div>
       </div>
       <div className="offer-h1">
+        <img
+          className="companyimage"
+          src={companyimage}
+          alt="company image"
+        ></img>
         <h1>Aplikuj na to stanowisko</h1>
       </div>
       <div className="offer-aplikuj-container">
         <div className="offer-aplikuj">
-          <Input>Imie</Input>
-          <Input>Nazwisko</Input>
-          <Input>Imie</Input>
-          <Input>Imie</Input>
-          <input type="checkbox" id="aplikuj" />
-          <Button>Aplikuj</Button>
+          <p>Imie</p>
+          <Input></Input>
+          <p>Nazwisko</p>
+          <Input></Input>
+          <p>E-mail</p>
+          <Input></Input>
+          <p>Numer telefonu</p>
+          <Input></Input>
+          <p>Plik CV</p>
+          <Button id="btn-explore" variant="contained">
+            Wgraj plik CV
+          </Button>
+          <div className="checkbox-aplikuj">
+            <p>Akceptuje warunki rekrutacyjne</p>
+            <input type="checkbox" id="aplikuj" />
+          </div>
+          <Button id="btn-explore" variant="contained">
+            Aplikuj
+          </Button>
         </div>
       </div>
       <div className="btn-back2">
