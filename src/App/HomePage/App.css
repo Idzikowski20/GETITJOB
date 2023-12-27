@@ -284,6 +284,8 @@ a {
 }
 
 .template_Container2 {
+  top: 200px;
+  position: relative;
   height: 100%;
 }
 
@@ -474,6 +476,7 @@ h1 {
 }
 
 .navigation {
+  background: #121828;
   padding: 10px;
   position: static;
   display: flex;

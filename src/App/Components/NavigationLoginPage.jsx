@@ -24,42 +24,7 @@ const Navigation = () => {
             <a href="/">Strona Glowna</a>
           </li>
           <li>
-            <a class="dropdown-arrow" href="/">
-              Produkty
-            </a>
-            <ul class="sub-menus">
-              <li>
-                <a href="/">Products 1</a>
-              </li>
-              <li>
-                <a href="/">Products 2</a>
-              </li>
-              <li>
-                <a href="/">Products 3</a>
-              </li>
-              <li>
-                <a href="/">Products 4</a>
-              </li>
-            </ul>
-          </li>
-          <li>
             <a href="/">O nas</a>
-          </li>
-          <li>
-            <a class="dropdown-arrow" href="/">
-              Serwis
-            </a>
-            <ul class="sub-menus">
-              <li>
-                <a href="/">Services 1</a>
-              </li>
-              <li>
-                <a href="/">Services 2</a>
-              </li>
-              <li>
-                <a href="/">Services 3</a>
-              </li>
-            </ul>
           </li>
           <li>
             <a href="/">Kontakt</a>

@@ -121,7 +121,6 @@ a {
 
 .inputContainer {
   display: flex;
-  flex-direction: column;
   align-items: flex-start;
   justify-content: center;
 }
@@ -139,6 +138,19 @@ a {
   border: 1px solid grey;
   padding-left: 8px;
 }
+.InputUser {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
+}
+.InputUser p{
+  margin: 15px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
+}
 
 .inputButton {
   font-size: 20px;
@@ -153,4 +165,44 @@ a {
 .inputButton p {
   text-align: center;
   padding: 30px;
+}
+
+.btn-logout {
+  font-size: 20px;
+  color: #fff;
+  background: #3f298f;
+  text-align: center;
+  width: 150px;
+  height: 50px;
+  border-radius: 20px;
+}
+
+.titleContainer h3 {
+  position: relative;
+  color: hsl(0, 0%, 68%);
+  font-weight: bold!important;
+  font-family: "Anonymous Pro", monospace!important;
+  letter-spacing: 7px!important;
+  overflow: hidden;
+  border-right: 2px solid hsl(0, 0%, 80%);
+  white-space: nowrap;
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+    blinkTextCursor 500ms infinite;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 530px;
+  }
+}
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: hsl(0, 0%, 80%);
+  }
+  to {
+    border-right-color: transparent;
+  }
 }
