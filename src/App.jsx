@@ -1,73 +1,40 @@
-import "./App.css";
-import "@fontsource/roboto/300.css";
-import "@fontsource/roboto/400.css";
-import "@fontsource/roboto/500.css";
-import "@fontsource/roboto/700.css";
+// App.jsx
 import { useState } from "react";
-import ButtonUsage from "./Components/ButtonUsage";
-import Navigation from "./Components/Navigation";
-import banner from "./images/banner.png";
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
-import JobList from "./Components/JobList";
-import JobDetails from "./Components/JobDetails";
-import data from "./Components/JobOfferts.json";
-import SearchBar from "./Components/Searchbar";
-import H1Welcome from "./Components/H1Welcome";
-<meta name="viewport" content="initial-scale=1, width=device-width" />;
+import { Routes, Route } from "react-router-dom";
+import LoginPage from "./App/LoginPage/LoginPage";
+import HomePage from "./App/HomePage/HomePage";
+import JobDetails from "./App/Components/JobDetails";
+import RegisterPage from "./App/RegisterPage/RegisterPage";
 
 function App() {
-  const [searchTerm, setSearchTerm] = useState("");
-  const [workForm, setWorkForm] = useState("all");
-  const [jobCategory, setJobCategory] = useState("all");
-
-  const filterJobs = (job) => {
-    const matchTitle = job.title
-      .toLowerCase()
-      .includes(searchTerm.toLowerCase());
-    const matchWorkForm = workForm === "all" || job.workForm === workForm;
-    const matchJobCategory = jobCategory === "all" || job.value === jobCategory;
-
-    return matchTitle && matchWorkForm && matchJobCategory;
-  };
+  const [loggedIn, setLoggedIn] = useState(false);
+  const [email, setEmail] = useState("");
 
   return (
-    <div className="App">
-      <Navigation />
-      <div className="welcome-center">
-        <img className="banner-img" src={banner} alt="banner"></img>
-        <H1Welcome />
-        <ButtonUsage />
-      </div>
-      <div className="searchbar">
-        <Router>
-          <Routes>
-            <Route
-              path="/"
-              element={
-                <div className="templateContainer">
-                  <SearchBar
-                    setSearchTerm={setSearchTerm}
-                    setWorkForm={setWorkForm}
-                    setJobCategory={setJobCategory}
-                  />
-                  <JobList data={data} filterJobs={filterJobs} />
-                </div>
-              }
+    <div>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <HomePage
+              email={email}
+              loggedIn={loggedIn}
+              setLoggedIn={setLoggedIn}
             />
-            <Route
-              path="/job/:jobId"
-              element={
-                <div className="offer-moredetails">
-                  <div className="btn-back">
-                    <Link to="/">👈 Wróć do ofert</Link>
-                  </div>
-                  <JobDetails data={data} />
-                </div>
-              }
-            />
-          </Routes>
-        </Router>
-      </div>
+          }
+        />
+        <Route
+          path="/login"
+          element={<LoginPage setLoggedIn={setLoggedIn} setEmail={setEmail} />}
+        />
+        <Route
+          path="/register"
+          element={
+            <RegisterPage setLoggedIn={setLoggedIn} setEmail={setEmail} />
+          }
+        />
+        <Route path="/job/:jobId" element={<JobDetails />} />
+      </Routes>
     </div>
   );
 }

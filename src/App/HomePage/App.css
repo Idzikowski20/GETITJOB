@@ -4,7 +4,8 @@ a {
 }
 
 .App {
-  min-height: 200vh;
+  color: #fff;
+  height: 270vh;
   background: #121828;
 }
 
@@ -51,7 +52,7 @@ a {
 }
 
 .btn-back2 a {
-  top: -20px;
+  top: 50px;
   left: 0;
   position: relative;
   text-align: center;
@@ -63,7 +64,6 @@ a {
 }
 
 .btn-back2 a:hover {
-  top: -20px;
   left: 0;
   position: relative;
   text-align: center;

@@ -1,5 +1,6 @@
 import * as React from "react";
 import Button from "@mui/material/Button";
+import { Link } from "react-router-dom";
 <meta name="viewport" content="initial-scale=1, width=device-width" />;
 
 export default function ButtonUsage() {
@@ -9,9 +10,11 @@ export default function ButtonUsage() {
         Jesteś pracodawcą i chcesz umieścić swoją ofertę? Dołącz do współpracy!
       </div>
       <div>
-        <Button id="btn-explore" variant="contained">
-          Zarejestruj się
-        </Button>
+        <Link to="/register">
+          <Button id="btn-explore" variant="contained">
+            Zarejestruj się
+          </Button>
+        </Link>
       </div>
     </div>
   );
