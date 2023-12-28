@@ -25,6 +25,8 @@ a {
 }
 
 .login-box {
+  top: -100px;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -144,7 +146,7 @@ a {
   display: flex;
   text-align: center;
 }
-.InputUser p{
+.InputUser p {
   margin: 15px;
   justify-content: center;
   align-items: center;
@@ -177,32 +179,14 @@ a {
   border-radius: 20px;
 }
 
-.titleContainer h3 {
+.titleContainer {
+  top: 40px;
   position: relative;
-  color: hsl(0, 0%, 68%);
-  font-weight: bold!important;
-  font-family: "Anonymous Pro", monospace!important;
-  letter-spacing: 7px!important;
-  overflow: hidden;
-  border-right: 2px solid hsl(0, 0%, 80%);
-  white-space: nowrap;
-  animation: typewriter 4s steps(44) 1s 1 normal both,
-    blinkTextCursor 500ms infinite;
 }
 
-@keyframes typewriter {
-  from {
-    width: 0;
-  }
-  to {
-    width: 530px;
-  }
-}
-@keyframes blinkTextCursor {
-  from {
-    border-right-color: hsl(0, 0%, 80%);
-  }
-  to {
-    border-right-color: transparent;
-  }
+.titleContainerP {
+  top: -70px;
+  left: 70px;
+  position: relative;
+  font-size: 20px;
 }

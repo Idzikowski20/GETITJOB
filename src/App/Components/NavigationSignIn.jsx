@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "@mui/material/Button";
 import logo from "../images/logo.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { onAuthStateChanged, signOut } from "firebase/auth";
 import { auth } from "../../FireBase";
 import { useState } from "react";
@@ -18,52 +18,48 @@ function updatemenu() {
 }
 
 const Navigation = () => {
-  const auth = getAuth();
-  onAuthStateChanged(auth, (user) => {
-    if (user) {
-      // User is signed in, see docs for a list of available properties
-      // https://firebase.google.com/docs/reference/js/auth.user
-      const uid = user.uid;
-      // ...
-    } else {
-      // User is signed out
-      // ...
-    }
-  });
-
   const [user, setUser] = useState({});
 
   onAuthStateChanged(auth, (currentUser) => {
     setUser(currentUser);
   });
 
+  const history = useNavigate();
+
   const logout = async () => {
     await signOut(auth);
+    history("/");
   };
 
   return (
     <div className="navigation">
-      <Link to="/Login">
-        <Button className="btn-login" variant="contained">
-          Zaloguj
-        </Button>
-      </Link>
+      <div className="InputUserSignIn">
+        <div className="SignInUser">
+          <p>Witaj! 👋</p>
+          {user?.email}
+        </div>
+        <div>
+          <Button className="btn-login" variant="contained" onClick={logout}>
+            Wyloguj
+          </Button>
+        </div>
+      </div>
       <nav id="menu">
         <input type="checkbox" id="responsive-menu" onclick="updatemenu()" />
         <label></label>
         <ul className="menu-background">
           <li>
-            <a href="/">Strona Glowna</a>
+            <a href="/home-signedIn">Strona Glowna</a>
           </li>
           <li>
-            <a href="/">O nas</a>
+            <a href="/home-signedIn">O nas</a>
           </li>
           <li>
-            <a href="/">Kontakt</a>
+            <a href="/home-signedIn">Kontakt</a>
           </li>
         </ul>
       </nav>
-      <a href="/">
+      <a href="/home-signedIn">
         <img src={logo} className="logo" alt="logo" />
       </a>
     </div>

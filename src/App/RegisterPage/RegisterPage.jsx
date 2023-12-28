@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import "./styles.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Navigation from "../Components/NavigationLoginPage";
 import Banner2 from "../images/banner2.png";
 import {
@@ -14,6 +14,8 @@ import { auth } from "../../FireBase";
 function App() {
   const [registerEmail, setRegisterEmail] = useState("");
   const [registerPassword, setRegisterPassword] = useState("");
+
+  const history = useNavigate();
 
   const [user, setUser] = useState({});
 
@@ -29,43 +31,14 @@ function App() {
         registerPassword
       );
       console.log(user);
+      alert(
+        "Twoje konto zostało pomyslnie utworzone. Kliknij Ok aby zostać automatycznie przekierowany na strone."
+      );
+      history("/AdminPanel");
     } catch (error) {
       console.error(error.message);
     }
   };
-
-  const logout = async () => {
-    await signOut(auth);
-  };
-
-  // const onButtonClick = () => {
-  //   // Set initial error values to empty
-  //   setEmailError("");
-  //   setPasswordError("");
-
-  //   // Check if the user has entered both fields correctly
-  //   if ("" === email) {
-  //     setEmailError("Please enter your email");
-  //     return;
-  //   }
-
-  //   if (!/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email)) {
-  //     setEmailError("Please enter a valid email");
-  //     return;
-  //   }
-
-  //   if ("" === password) {
-  //     setPasswordError("Please enter a password");
-  //     return;
-  //   }
-
-  //   if (password.length < 7) {
-  //     setPasswordError("The password must be 8 characters or longer");
-  //     return;
-  //   }
-
-  //   // Authentication calls will be made here...
-  // };
 
   return (
     <>
@@ -80,7 +53,10 @@ function App() {
           </div>
           <div className="login-box">
             <div className={"titleContainer"}>
-              <h3>Załóż konto</h3>
+              <h3>Załóż konto 🔐</h3>
+            </div>
+            <div className="titleContainerP">
+              <p>Dla pracodawcy</p>
             </div>
             <br />
             <div className={"inputContainer"}>
@@ -110,19 +86,12 @@ function App() {
             <div className={"inputContainer"}>
               <button className={"inputButton"} onClick={register}>
                 {" "}
-                Zalóż konto{" "}
+                Stwórz{" "}
               </button>
-              <button className="btn-logout" onClick={logout}>
-                Wyloguj
-              </button>
-            </div>
-            <div className="InputUser">
-              <p>Zalogowano jako:</p>
-              {user?.email}
             </div>
             <div>
               <p>
-                Masz już konto? <Link to="/login">Zaloguj się!</Link>
+                Masz już konto? <Link to="/login">Zaloguj się! 💪</Link>
               </p>
             </div>
           </div>

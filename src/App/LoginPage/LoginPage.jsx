@@ -1,7 +1,8 @@
 import React from "react";
 import { useState } from "react";
 import "./styles.css";
-import { Link } from "react-router-dom";
+import Button from "@mui/material/Button";
+import { Link, useNavigate } from "react-router-dom";
 import Navigation from "../Components/NavigationLoginPage";
 import Banner2 from "../images/banner2.png";
 import {
@@ -25,47 +26,23 @@ function App() {
     await signOut(auth);
   };
 
+  const history = useNavigate();
+
   const login = async () => {
     try {
       const user = await signInWithEmailAndPassword(
         auth,
         loginEmail,
         loginPassword
+        // Zalogowano
       );
       console.log(user);
+      console.log("Logowanie zakończone sukcesem.");
+      history("/AdminPanel");
     } catch (error) {
       console.error(error.message);
     }
   };
-
-  // const onButtonClick = () => {
-  //   // Set initial error values to empty
-  //   setEmailError("");
-  //   setPasswordError("");
-
-  //   // Check if the user has entered both fields correctly
-  //   if ("" === email) {
-  //     setEmailError("Please enter your email");
-  //     return;
-  //   }
-
-  //   if (!/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email)) {
-  //     setEmailError("Please enter a valid email");
-  //     return;
-  //   }
-
-  //   if ("" === password) {
-  //     setPasswordError("Please enter a password");
-  //     return;
-  //   }
-
-  //   if (password.length < 7) {
-  //     setPasswordError("The password must be 8 characters or longer");
-  //     return;
-  //   }
-
-  //   // Authentication calls will be made here...
-  // };
 
   return (
     <>
@@ -79,8 +56,11 @@ function App() {
             <img className="image-banner2" src={Banner2} alt="Hr image"></img>
           </div>
           <div className="login-box">
-            <div className={"titleContainer"}>
-              <h3>Zaloguj się</h3>
+            <div className={"titleContainer2"}>
+              <h3>Zaloguj sie 🔐</h3>
+            </div>
+            <div className="titleContainerP2">
+              <p>Dla pracodawcy</p>
             </div>
             <br />
             <div className={"inputContainer"}>
@@ -110,21 +90,15 @@ function App() {
             <div className={"inputContainer"}>
               <button className={"inputButton"} onClick={login}>
                 {" "}
-                Zaloguj się{" "}
+                Logowanie{" "}
               </button>
-            </div>
-            <div className="InputUser">
-              <p>Zalogowano jako:</p>
-              {user?.email}
             </div>
             <div>
               <p>
-                Nie masz jeszcze konta? <Link to="/register">Załóż konto!</Link>
+                Nie masz jeszcze konta?{" "}
+                <Link to="/register">Załóż konto! ⚙️</Link>
               </p>
             </div>
-            <button className="btn-logout" onClick={logout}>
-              Wyloguj
-            </button>
           </div>
         </div>
       </div>
