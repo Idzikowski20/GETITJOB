@@ -49,17 +49,17 @@ const Navigation = () => {
         <label></label>
         <ul className="menu-background">
           <li>
-            <a href="/home-signedIn">Strona Glowna</a>
+            <a href="">Panel Administracji</a>
           </li>
           <li>
-            <a href="/home-signedIn">O nas</a>
+            <a href="">Profil</a>
           </li>
-          <li>
-            <a href="/home-signedIn">Kontakt</a>
-          </li>
+          <Button className="btn-login" variant="contained">
+            Dodaj Oferte ✅
+          </Button>
         </ul>
       </nav>
-      <a href="/home-signedIn">
+      <a href="">
         <img src={logo} className="logo" alt="logo" />
       </a>
     </div>
