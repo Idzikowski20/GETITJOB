@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Button from "@mui/material/Button";
 import logo from "../images/logo.png";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "../../FireBase";
 
@@ -22,7 +22,7 @@ function Navigation() {
   const handleLoginClick = () => {
     if (user) {
       // Jeśli użytkownik jest zalogowany, przekieruj na stronę AdminPanel
-      console.log("Zostałeś zalogowany automatycznie");
+      alert("Zostałeś automatycznie zalogowany");
       navigate("/AdminPanel");
     } else {
       // Jeśli użytkownik nie jest zalogowany, przekieruj na stronę logowania
@@ -52,6 +52,11 @@ function Navigation() {
           </li>
           <li>
             <a href="/">Kontakt</a>
+          </li>
+          <li>
+            <Button className="btn-login" variant="contained">
+              Dodaj ogłoszenie
+            </Button>
           </li>
         </ul>
       </nav>

@@ -3,9 +3,12 @@ a {
   color: #fff;
 }
 
+:root {
+  --retool-canvas-max-width: auto;
+}
+
 .App {
   color: #fff;
-  height: 270vh;
   background: #121828;
 }
 
@@ -14,8 +17,22 @@ a {
 }
 
 .banner-img {
-  width: 412.43px;
-  height: 320px;
+  width: 100%;
+}
+
+.banner-text {
+  font-size: 20px;
+  right: -60px;
+  top: -300px;
+  position: relative;
+}
+
+.banner-img h2 {
+  text-align: center;
+  align-items: center;
+  display: flex;
+  font-size: 60px;
+  margin: 0;
 }
 
 .App-header {
@@ -84,8 +101,8 @@ a {
 }
 
 .welcome-center {
+  top: -200px;
   color: #fff;
-  top: 100px;
   position: relative;
   text-align: center;
   display: flow;
@@ -119,11 +136,9 @@ a {
 }
 
 .searchbar {
-  min-height: 110vh;
   background: #121828;
-  top: 200px;
   position: relative;
-  margin-top: 50px;
+  margin-top: 40px;
   display: flex;
   justify-content: center;
 }
@@ -286,7 +301,6 @@ a {
 .template_Container2 {
   top: 200px;
   position: relative;
-  height: 100%;
 }
 
 .offer-location {
@@ -443,7 +457,7 @@ a {
 
 h1 {
   color: hsl(0, 0%, 28%);
-  font-size: 30px;
+  font-size: 40px;
   font-weight: bold !important;
   font-family: monospace;
   letter-spacing: 7px !important;

@@ -34,8 +34,17 @@ function HomePage() {
   return (
     <div className="App">
       <Navigation />
+      <img className="banner-img" src={banner} alt="banner"></img>
+      <div className="banner-text">
+        <h2>Stali partnerzy mają jeszcze lepiej!</h2>
+        <p>Proponujemy atrakcyjne warunki na pakiety ogłoszeń.</p>
+        <p>Masz pytania? Skontaktuj się z nami.</p>
+        <div>
+          <button>+48 507 244 174</button>
+          <button>sales@getitjob.pl</button>
+        </div>
+      </div>
       <div className="welcome-center">
-        <img className="banner-img" src={banner} alt="banner"></img>
         <H1Welcome />
         <ButtonUsage />
       </div>
