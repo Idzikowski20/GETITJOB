@@ -64,6 +64,12 @@ function HomePage() {
       </div>
       <div className="welcome-center">
         <H1Welcome />
+        <div class="lds-ring">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
       </div>
       <div className="searchbar">
         <Routes>

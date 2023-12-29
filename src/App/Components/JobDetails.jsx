@@ -37,7 +37,14 @@ const JobDetails = () => {
   }, [jobDetails]);
 
   if (!jobDetails) {
-    return <p>Ładowanie oferty...</p>;
+    return (
+      <div class="lds-ring">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    );
   }
   return (
     <>
