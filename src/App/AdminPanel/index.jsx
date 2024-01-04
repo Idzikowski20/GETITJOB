@@ -4,7 +4,7 @@ import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
-import Navigation from "../Components/NavigationSignIn";
+import Navigation from "../Components/AdminPanelNav";
 import banner from "../images/banner.png";
 import { Routes, Route, Link, useNavigate } from "react-router-dom";
 import JobList from "../Components/JobList";
@@ -41,49 +41,9 @@ function HomePage() {
     };
   }, [navigate]);
 
-  const filterJobs = (job) => {
-    const matchTitle = job.title
-      .toLowerCase()
-      .includes(searchTerm.toLowerCase());
-    const matchWorkForm = workForm === "all" || job.workForm === workForm;
-    const matchJobCategory = jobCategory === "all" || job.value === jobCategory;
-
-    return matchTitle && matchWorkForm && matchJobCategory;
-  };
-
   return (
     <div className="App">
       <Navigation />
-      <div className="welcome-center">
-        <img className="banner-img" src={banner} alt="banner"></img>
-        <H1Welcome />
-      </div>
-      <div className="searchbar">
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <div className="templateContainer">
-                <SearchBar
-                  setSearchTerm={setSearchTerm}
-                  setWorkForm={setWorkForm}
-                  setJobCategory={setJobCategory}
-                />
-                <JobList data={data} filterJobs={filterJobs} />
-              </div>
-            }
-          />
-          <Route
-            path="/job/:jobId"
-            element={
-              <div className="offer-moredetails">
-                <div className="btn-back"></div>
-                <JobDetails data={data} />
-              </div>
-            }
-          />
-        </Routes>
-      </div>
     </div>
   );
 }

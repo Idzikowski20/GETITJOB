@@ -29,7 +29,6 @@ const JobDetails = () => {
   }
   return (
     <>
-      <Navigation />
       <div className="App">
         <div ref={ref} className="template_Container2">
           <div className="template">

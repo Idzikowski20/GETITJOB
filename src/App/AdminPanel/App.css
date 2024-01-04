@@ -502,7 +502,7 @@ h1 {
   position: static;
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
