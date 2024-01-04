@@ -1,4 +1,4 @@
-import React from "react";
+import { React, useEffect } from "react";
 import { useState } from "react";
 import "./styles.css";
 import { Link, useNavigate } from "react-router-dom";
@@ -14,15 +14,14 @@ import { auth } from "../../FireBase";
 function App() {
   const [registerEmail, setRegisterEmail] = useState("");
   const [registerPassword, setRegisterPassword] = useState("");
-
-  const history = useNavigate();
-
+  // Przekierowanie
+  const navigate = useNavigate();
+  // Sprawdzanie jaki uzytkownik jest zalogowany
   const [user, setUser] = useState({});
-
   onAuthStateChanged(auth, (currentUser) => {
     setUser(currentUser);
   });
-
+  // Funkcja zakładania konta
   const register = async () => {
     try {
       const user = await createUserWithEmailAndPassword(
@@ -34,11 +33,30 @@ function App() {
       alert(
         "Twoje konto zostało pomyslnie utworzone. Kliknij Ok aby zostać automatycznie przekierowany na strone."
       );
-      history("/AdminPanel");
+      navigate("/AdminPanel");
     } catch (error) {
       console.error(error.message);
     }
   };
+
+  // Jeżeli użytkownik jest zalogowany i w przegladarce wejdzie
+  // w /register to funkcja sprawdza czy uzytkownik jest zalogowany
+  // jesli tak to przerzuca automatycznie do /AdminPanel
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
+      if (user) {
+        // Jeśli użytkownik jest zalogowany, przekieruj na stronę AdminPanel
+        console.log(
+          "Nie możesz przejść do strony rejestracji - Wyloguj się i spróbuj ponownie."
+        );
+        navigate("/AdminPanel");
+      }
+    });
+
+    return () => {
+      unsubscribe();
+    };
+  }, [navigate]);
 
   return (
     <>
@@ -47,11 +65,11 @@ function App() {
         <div className="btn-back3">
           <Link to="/">Strona główna</Link>
         </div>
-        <div className="login-container">
+        <div className="register-container">
           <div className="image-box">
             <img className="image-banner2" src={Banner2} alt="Hr image"></img>
           </div>
-          <div className="login-box">
+          <div className="register-box">
             <div className={"titleContainer"}>
               <h3>Załóż konto 🔐</h3>
             </div>

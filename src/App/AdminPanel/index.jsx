@@ -58,8 +58,8 @@ function HomePage() {
         <p>Proponujemy atrakcyjne warunki na pakiety ogłoszeń.</p>
         <p>Masz pytania? Skontaktuj się z nami.</p>
         <div>
-          <button>+48 507 244 174</button>
-          <button>sales@getitjob.pl</button>
+          <button className="btn-banner">+48 507 244 174</button>
+          <button className="btn-banner">sales@getitjob.pl</button>
         </div>
       </div>
       <div className="welcome-center">

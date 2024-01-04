@@ -3,9 +3,8 @@ a {
   color: #fff;
 }
 
-.App {
+.App2 {
   color: #fff;
-  height: 270vh;
   background: #121828;
 }
 
@@ -16,6 +15,7 @@ a {
 }
 
 .SignInUser {
+  color: #fff;
   right: 100px;
   position: relative;
   height: 60px;

@@ -698,6 +698,19 @@ h1 {
     position: relative;
   }
 
+  .banner-text {
+    text-align: center;
+    width: 100%;
+    font-size: 15px;
+    right: 0;
+    top: -240px;
+    position: relative;
+  }
+
+  .banner-text h2 {
+    font-size: 22px;
+  }
+
   .companyimage {
     border-top: 2px solid grey;
     border-radius: 120px;
@@ -923,8 +936,7 @@ h1 {
   }
 
   .searchbar {
-    min-height: 300vh;
-    top: 5px;
+    top: -235px;
     display: flex;
     justify-content: center;
   }
@@ -940,6 +952,7 @@ h1 {
   }
 
   .template_Container {
+    background: #121828;
     margin-top: 15px;
   }
 
@@ -955,8 +968,8 @@ h1 {
   }
 
   .banner-img {
-    width: 247.46px;
-    height: 192px;
+    width: fit-content;
+    height: 300px;
   }
 
   .navigtion {
@@ -968,13 +981,13 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    top: 60px;
     position: relative;
     margin-bottom: 50px;
   }
 
   .welcome-center h1 {
-    font-size: 30px;
+    font-weight: bold;
+    font-size: 25px;
   }
 
   .logo {
