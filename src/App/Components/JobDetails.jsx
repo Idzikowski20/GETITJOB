@@ -1,16 +1,18 @@
-// JobDetails.jsx
-import React, { useState, useEffect, useRef } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import Button from "@mui/material/Button";
 import { useParams, Link } from "react-router-dom";
 import data from "./JobOfferts.json";
 import { Input } from "@mui/material";
 import companyimage from "../images/companyimage.png";
-import HR from "../images/HR.png";
 import Navigation from "./Navigation";
+import NavigationSignIn from "./NavigationSignIn"; // Dodany import
+import { onAuthStateChanged } from "firebase/auth";
+import { auth } from "../../FireBase";
 
 const JobDetails = () => {
   const { jobId } = useParams();
   const [jobDetails, setJobDetails] = useState(null);
+  const [user, setUser] = useState(null);
   const ref = useRef(); // Dodana deklaracja ref
 
   useEffect(() => {
@@ -19,13 +21,30 @@ const JobDetails = () => {
   }, [jobId]);
 
   useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
+      setUser(currentUser);
+    });
+
+    return () => {
+      unsubscribe();
+    };
+  }, []);
+
+  useEffect(() => {
     if (ref.current) {
       ref.current.scrollIntoView({ behavior: "smooth" });
     }
   }, [jobDetails]);
 
   if (!jobDetails) {
-    return <p>Ładowanie oferty...</p>;
+    return (
+      <div class="lds-ring">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    );
   }
   return (
     <>
@@ -96,7 +115,12 @@ const JobDetails = () => {
           </div>
           <div className="offer-h1">
             <div className="btn-back2">
-              <Link to="/">👈 Wróć do ofert</Link>
+              {user ? (
+                <Link to="/AdminPanel">Wróc do ofert</Link>
+              ) : (
+                <Link to="/">Wróc do ofert</Link>
+              )}{" "}
+              {/* Zmieniona linia */}
             </div>
             <img
               className="companyimage"

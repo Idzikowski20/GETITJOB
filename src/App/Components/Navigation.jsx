@@ -1,59 +1,51 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Button from "@mui/material/Button";
 import logo from "../images/logo.png";
-import { Link } from "react-router-dom";
-import { onAuthStateChanged, signOut } from "firebase/auth";
+import { useNavigate } from "react-router-dom";
+import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "../../FireBase";
-import { useState } from "react";
-import { getAuth } from "firebase/auth";
-<meta name="viewport" content="initial-scale=1, width=device-width" />;
 
-function updatemenu() {
-  if (document.getElementById("responsive-menu").checked === true) {
-    document.getElementById("menu").style.borderBottomRightRadius = "0";
-    document.getElementById("menu").style.borderBottomLeftRadius = "0";
-  } else {
-    document.getElementById("menu").style.borderRadius = "10px";
-  }
-}
+function Navigation() {
+  const [user, setUser] = useState(null);
+  const navigate = useNavigate();
 
-const Navigation = () => {
-  const auth = getAuth();
-  onAuthStateChanged(auth, (user) => {
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
+      setUser(currentUser);
+    });
+
+    return () => {
+      unsubscribe();
+    };
+  }, []);
+
+  const handleLoginClick = () => {
     if (user) {
-      // User is signed in, see docs for a list of available properties
-      // https://firebase.google.com/docs/reference/js/auth.user
-      const uid = user.uid;
-      // ...
+      // Jeśli użytkownik jest zalogowany, przekieruj na stronę AdminPanel
+      alert("Zostałeś automatycznie zalogowany");
+      navigate("/AdminPanel");
     } else {
-      // User is signed out
-      // ...
+      // Jeśli użytkownik nie jest zalogowany, przekieruj na stronę logowania
+      console.log("Aby uzyskać dostęp do tej strony - zaloguj się.");
+      navigate("/Login");
     }
-  });
-
-  const [user, setUser] = useState({});
-
-  onAuthStateChanged(auth, (currentUser) => {
-    setUser(currentUser);
-  });
-
-  const logout = async () => {
-    await signOut(auth);
   };
 
   return (
     <div className="navigation">
-      <Link to="/Login">
-        <Button className="btn-login" variant="contained">
-          Zaloguj
-        </Button>
-      </Link>
+      <Button
+        className="btn-login"
+        variant="contained"
+        onClick={handleLoginClick}
+      >
+        Zaloguj
+      </Button>
       <nav id="menu">
-        <input type="checkbox" id="responsive-menu" onclick="updatemenu()" />
+        <input type="checkbox" id="responsive-menu" onClick="updatemenu()" />
         <label></label>
         <ul className="menu-background">
           <li>
-            <a href="/">Strona Glowna</a>
+            <a href="/">Strona Główna</a>
           </li>
           <li>
             <a href="/">O nas</a>
@@ -61,6 +53,9 @@ const Navigation = () => {
           <li>
             <a href="/">Kontakt</a>
           </li>
+          <Button className="btn-login" variant="contained">
+            Dodaj ogłoszenie
+          </Button>
         </ul>
       </nav>
       <a href="/">
@@ -68,6 +63,6 @@ const Navigation = () => {
       </a>
     </div>
   );
-};
+}
 
 export default Navigation;

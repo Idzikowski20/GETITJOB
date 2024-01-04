@@ -57,6 +57,9 @@ const Navigation = () => {
           <li>
             <a href="/AdminPanel">Kontakt</a>
           </li>
+          <Button className="btn-login" variant="contained">
+            Dodaj Oferte ✅
+          </Button>
         </ul>
       </nav>
       <a href="/AdminPanel">
