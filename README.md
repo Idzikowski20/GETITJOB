@@ -1,70 +1,21 @@
-# Getting Started with Create React App
+# GET:ITJOB to platforma z ofertami pracy z branży IT.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![image](https://github.com/Idzikowski20/GETITJOB/assets/143029584/30223eb7-d273-48e2-b9b3-004754543d15)
 
-## Available Scripts
+Na stronie możemy wyszukiwać ofert za pomocą filtrów; Wyszukiwanie ręcznę lub po formie pracy i umowie.
 
-In the project directory, you can run:
+## Wejście w oferte generuje nową stronę /job/ID
 
-### `npm start`
+![image](https://github.com/Idzikowski20/GETITJOB/assets/143029584/d3484ce2-97e4-4f5f-be1e-b5b83a88bd5b)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Logowanie i rejestracja.
 
-### `npm test`
+![image](https://github.com/Idzikowski20/GETITJOB/assets/143029584/b72ce130-7df8-474d-8a7e-45521bf6e6eb)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Po założeniu konta użytkownik jest przenoszony do /AdminPanel. Jeżeli wróci na stronę głowną to Navigacja będzię zaaktualizowana.
+Użytkownik niezalogowany nie może wejść ręcznie do /AdminPanel - skrypt sprawdza czy (!user) jest zalogowany jeśli nie to automatycznie przekierowywuje do /login.
+Uzytkownik zalogowany nie może przejść do /Login , ponieważ jest już zalogowany. Tak samo tyczy się to /register.
+Jeśli zamkniemy okienko i wrocimy ponownie to po kliknięciu "zaloguj" skrypt sprawdza czy uzytkownik się wylogował przed opuszczeniem,jeśli nie to zostanie automatycznie zalogowany.
+Jeśli tak to zostanie przeniesiony do /login.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
