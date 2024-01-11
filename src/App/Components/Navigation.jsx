@@ -53,9 +53,12 @@ function Navigation() {
           <li>
             <a href="/">Kontakt</a>
           </li>
-          <Button className="btn-login" variant="contained">
-            Dodaj ogłoszenie
-          </Button>
+          <li>
+            <a href="/">Pakiety ogłoszeń</a>
+          </li>
+          <li>
+            <a href="/">Dlaczego my</a>
+          </li>
         </ul>
       </nav>
       <a href="/">

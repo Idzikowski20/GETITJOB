@@ -6,10 +6,10 @@ import HomePage from "./App/HomePage/HomePage";
 import JobDetails from "./App/Components/JobDetails";
 import RegisterPage from "./App/RegisterPage/RegisterPage";
 import AdminPanel from "./App/AdminPanel";
+import Dashboard from "./App/Dashboard/Dashboard";
+import Settings from "./App/Settings/Settings";
 import ProtectedPage from "./App/Components/ProtectedPage";
-import firebase, { auth } from "./FireBase";
 import { AuthProvider } from "./AuthContext";
-import { onAuthStateChanged } from "firebase/auth";
 import "firebase/auth";
 
 function App() {
@@ -27,6 +27,8 @@ function App() {
           <Route path="/register" element={<RegisterPage />} />
           <Route path="/AdminPanel/*" element={<AdminPanel />} />
           <Route path="/job/:jobId" element={<JobDetails />} />
+          <Route path="/Dashboard" element={<Dashboard />} />
+          <Route path="/Settings" element={<Settings />} />
         </Routes>
       </AuthProvider>
     </div>

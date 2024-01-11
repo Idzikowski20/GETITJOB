@@ -8,6 +8,134 @@ a {
   background: #121828;
 }
 
+.adminpanelmenu-container {
+  padding: 20px;
+  border-radius: 10px;
+  border-top: 2px solid grey;
+  border-bottom: 2px solid grey;
+  margin: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.adminpanelmenu-panels {
+  cursor: pointer;
+  border-radius: 50px;
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  background: #324374;
+  width: 200px;
+  height: 100px;
+  color: #fff;
+  font-size: 20px;
+  text-shadow: 3px 3px 3px black;
+  transition: all 0.3s ease-in-out;
+}
+
+.adminpanelmenu-logout:hover {
+  cursor: pointer;
+  border-radius: 50px;
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  background: #bb3b41;
+  color: #fff;
+  font-size: 20px;
+  text-shadow: 3px 3px 3px black;
+  transform: scale(103%);
+}
+
+.adminpanelmenu-logout {
+  cursor: pointer;
+  border-radius: 50px;
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  background: #972a2f;
+  width: 200px;
+  height: 100px;
+  color: #fff;
+  font-size: 20px;
+  text-shadow: 3px 3px 3px black;
+  transition: all 0.3s ease-in-out;
+}
+
+.adminpanelmenu-panels:hover {
+  border-radius: 50px;
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  background: #45578b;
+  color: #fff;
+  font-size: 20px;
+  text-shadow: 3px 3px 3px black;
+  transform: scale(103%);
+}
+
+.adminpanelmenu-panels-offer {
+  cursor: pointer;
+  border-radius: 50px;
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  background: #27915c;
+  width: 200px;
+  height: 60px;
+  color: #fff;
+  font-size: 20px;
+  text-shadow: 3px 3px 3px black;
+  transition: all 0.3s ease-in-out;
+}
+
+.adminpanelmenu-panels-offer:hover {
+  cursor: pointer;
+  border-radius: 50px;
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  background: #3fb178;
+  color: #fff;
+  font-size: 20px;
+  text-shadow: 3px 3px 3px black;
+  transform: scale(103%);
+}
+
+.adminpanelmenu {
+  display: flex;
+}
+
+.searchbar2 {
+  background: #121828;
+  position: relative;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.searchbar2-desc {
+  font-weight: 800;
+  color: #fff;
+  justify-content: space-around;
+  width: 100%;
+  text-align: center;
+  display: flex;
+}
+
 .InputUserSignIn {
   align-items: center;
   justify-content: center;
@@ -16,17 +144,13 @@ a {
 
 .SignInUser {
   color: #fff;
-  right: 100px;
   position: relative;
   height: 60px;
-  width: 400px;
-  border-bottom: 2px solid grey;
   align-items: center;
   justify-content: center;
   display: flex;
   border-radius: 40px;
   padding: 15px;
-  border: 3px solid grey;
 }
 
 .price {
@@ -132,16 +256,24 @@ h1 {
 }
 #menu ul {
   width: 100%;
-  text-align: right;
+  text-align: center;
 }
 #menu li {
+  padding: 5px;
+  margin-right: 15px;
   display: inline-block;
   position: relative;
+  border-radius: 15px;
+  background: #c8cfe7;
 }
 
 #menu li:hover {
+  padding: 5px;
+  margin-right: 15px;
   display: inline-block;
   position: relative;
+  border-radius: 15px;
+  background: #eaecf1;
 }
 
 #menu a {
@@ -149,7 +281,7 @@ h1 {
   line-height: 45px;
   padding: 0 14px;
   text-decoration: none;
-  color: #ffffff;
+  color: #167594;
   font-size: 25px;
 }
 #menu a.dropdown-arrow:after {
@@ -157,7 +289,6 @@ h1 {
   margin-left: 5px;
 }
 #menu li a:hover {
-  border-radius: 30px;
   color: #0099cc;
   background: #f2f2f2;
 }
@@ -438,19 +569,18 @@ h1 {
     transition: all 0.5s ease-in-out;
   }
 
-  .searchbar {
-    min-height: 300vh;
-    top: 5px;
+  .searchbar2 {
+    top: -235px;
     display: flex;
     justify-content: center;
   }
 
-  .searchbar p,
+  .searchbar2 p,
   h4 {
     font-size: 10px;
   }
 
-  .searchbar img {
+  .searchbar2 img {
     width: 50px;
     height: 50px;
   }
@@ -542,6 +672,6 @@ h1 {
   .menu-background {
     background: #1e2433;
     border-radius: 20px;
-  background: #1e2433;
-}
+    background: #1e2433;
+  }
 }

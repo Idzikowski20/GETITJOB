@@ -8,11 +8,14 @@ export default function ButtonUsage() {
     <div>
       <div>
         Jesteś pracodawcą i chcesz umieścić swoją ofertę? Dołącz do współpracy!
+        <br></br>
+        Nasze oferty codziennie przegląda ponad 80 tyś osob.
       </div>
       <div>
+        <br></br>
         <Link to="/register">
           <Button id="btn-explore" variant="contained">
-            Zarejestruj się
+            Załóż konto pracodawcy
           </Button>
         </Link>
       </div>

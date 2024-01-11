@@ -5,7 +5,6 @@ import data from "./JobOfferts.json";
 import { Input } from "@mui/material";
 import companyimage from "../images/companyimage.png";
 import Navigation from "./Navigation";
-import NavigationSignIn from "./NavigationSignIn"; // Dodany import
 import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "../../FireBase";
 
@@ -49,6 +48,14 @@ const JobDetails = () => {
   return (
     <>
       <div className="App">
+        <div className="btn-back2">
+          {user ? (
+            <Link to="/AdminPanel">Wróc do ofert</Link>
+          ) : (
+            <Link to="/">Wróc do ofert</Link>
+          )}{" "}
+          {/* Zmieniona linia */}
+        </div>
         <div ref={ref} className="template_Container2">
           <div className="template">
             <div className="offer-top">
@@ -116,9 +123,11 @@ const JobDetails = () => {
           <div className="offer-h1">
             <div className="btn-back2">
               {user ? (
-                <Link to="/AdminPanel">Wróc do ofert</Link>
+                <Link to="/AdminPanel">
+                  Oferta nie dla ciebie? Wróć do ofert
+                </Link>
               ) : (
-                <Link to="/">Wróc do ofert</Link>
+                <Link to="/">Oferta nie dla ciebie? Wróć do ofert</Link>
               )}{" "}
               {/* Zmieniona linia */}
             </div>
