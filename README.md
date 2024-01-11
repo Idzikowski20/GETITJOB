@@ -1,5 +1,6 @@
 # GET:ITJOB to platforma z ofertami pracy z branży IT.
 
+![image](https://github.com/Idzikowski20/GETITJOB/assets/143029584/07b1bd87-0c0c-404d-8be0-00f069a48ceb)
 ![image](https://github.com/Idzikowski20/GETITJOB/assets/143029584/30223eb7-d273-48e2-b9b3-004754543d15)
 
 Na stronie możemy wyszukiwać ofert za pomocą filtrów; Wyszukiwanie ręcznę lub po formie pracy i umowie.
