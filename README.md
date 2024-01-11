@@ -1,5 +1,9 @@
 # GET:ITJOB to platforma z ofertami pracy z branży IT.
 
+Celem stworzenia tej aplikacji było uproszczenie znalezienia pracy i oszczędność naszego czasu. Prawie każdy 
+portal nie posiada widelek pracy a potencjalny pracodawca może tylko zmarnować swój i nasz cenny czas.
+Dlatego na GETITJOB wiesz czy to akurat szukają ciebie.
+
 ![image](https://github.com/Idzikowski20/GETITJOB/assets/143029584/07b1bd87-0c0c-404d-8be0-00f069a48ceb)
 ![image](https://github.com/Idzikowski20/GETITJOB/assets/143029584/30223eb7-d273-48e2-b9b3-004754543d15)
 
