@@ -8,6 +8,8 @@ Na stronie możemy wyszukiwać ofert za pomocą filtrów; Wyszukiwanie ręcznę 
 ## Wejście w oferte generuje nową stronę /job/ID
 
 ![image](https://github.com/Idzikowski20/GETITJOB/assets/143029584/d3484ce2-97e4-4f5f-be1e-b5b83a88bd5b)
+Aplikacja wykrywa "ID" oferty z pliku json a następnie tworzy podstronę z ścieżką /Job/ID
+I zaciąga dane jak opis oferty,stanowisko,wynagrodzenie. 
 
 
 ## Logowanie i rejestracja.
@@ -19,4 +21,8 @@ Użytkownik niezalogowany nie może wejść ręcznie do /AdminPanel - skrypt spr
 Uzytkownik zalogowany nie może przejść do /Login , ponieważ jest już zalogowany. Tak samo tyczy się to /register.
 Jeśli zamkniemy okienko i wrocimy ponownie to po kliknięciu "zaloguj" skrypt sprawdza czy uzytkownik się wylogował przed opuszczeniem,jeśli nie to zostanie automatycznie zalogowany.
 Jeśli tak to zostanie przeniesiony do /login.
+
+## TODO LISt
+1. Dodanie AdminPanelu dla testów, żeby każdy mógł założyc konto pracodawcy wejść i dodać oferte pracy.
+2. Zapisywanie danych do aplikowania na stanowisko pracy - Wpisujemy swoje dane i wgrywamy plik CV.
 
