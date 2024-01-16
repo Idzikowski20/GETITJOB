@@ -4,17 +4,17 @@ import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
-import Navigation from "../Components/AdminPanelNav";
-import banner from "../images/banner.png";
+import Navigation from "../../Components/AdminPanelNav";
+import banner from "../../images/banner.png";
 import { Routes, Route, useNavigate } from "react-router-dom";
-import JobList from "../Components/JobList";
-import JobDetails from "../Components/JobDetails";
-import data from "../Components/JobOfferts.json";
-import SearchBar from "../Components/Searchbar";
+import JobList from "../../Components/JobList";
+import JobDetails from "../../Components/JobDetails";
+import data from "../../Components/JobOfferts.json";
+import SearchBar from "../../Components/Searchbar";
 import { useState, useEffect } from "react";
 import { onAuthStateChanged, signOut } from "firebase/auth";
-import { auth } from "../../FireBase";
-import AdminPanelMenu from "../Components/AdminPanelMenu";
+import { auth } from "../../../FireBase";
+import AdminPanelMenu from "../../Components/AdminPanelMenu";
 
 <meta name="viewport" content="initial-scale=1, width=device-width" />;
 

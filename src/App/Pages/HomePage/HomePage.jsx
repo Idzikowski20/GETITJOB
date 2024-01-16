@@ -5,15 +5,15 @@ import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 import { useState } from "react";
-import ButtonUsage from "../Components/ButtonUsage";
-import Navigation from "../Components/Navigation";
-import banner from "../images/banner.png";
+import ButtonUsage from "../../Components/ButtonUsage";
+import Navigation from "../../Components/Navigation";
+import banner from "../../images/banner.png";
 import { Routes, Route, Link } from "react-router-dom";
-import JobList from "../Components/JobList";
-import JobDetails from "../Components/JobDetails";
-import data from "../Components/JobOfferts.json";
-import SearchBar from "../Components/Searchbar";
-import H1Welcome from "../Components/H1Welcome";
+import JobList from "../../Components/JobList";
+import JobDetails from "../../Components/JobDetails";
+import data from "../../Components/JobOfferts.json";
+import SearchBar from "../../Components/Searchbar";
+import H1Welcome from "../../Components/H1Welcome";
 <meta name="viewport" content="initial-scale=1, width=device-width" />;
 
 function HomePage() {

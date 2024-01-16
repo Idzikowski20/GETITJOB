@@ -1,13 +1,13 @@
 // App.jsx
 import { useState, useEffect } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
-import LoginPage from "./App/LoginPage/LoginPage";
-import HomePage from "./App/HomePage/HomePage";
+import LoginPage from "./App/Pages/LoginPage/LoginPage";
+import HomePage from "./App/Pages/HomePage/HomePage";
 import JobDetails from "./App/Components/JobDetails";
-import RegisterPage from "./App/RegisterPage/RegisterPage";
-import AdminPanel from "./App/AdminPanel";
-import Dashboard from "./App/Dashboard/Dashboard";
-import Settings from "./App/Settings/Settings";
+import RegisterPage from "./App/Pages/RegisterPage/RegisterPage";
+import AdminPanel from "./App/Pages/AdminPanel/index";
+import Dashboard from "./App/Pages/Dashboard/Dashboard";
+import Settings from "./App/Pages/Settings/Settings";
 import ProtectedPage from "./App/Components/ProtectedPage";
 import { AuthProvider } from "./AuthContext";
 import "firebase/auth";

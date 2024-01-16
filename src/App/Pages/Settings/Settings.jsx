@@ -4,15 +4,15 @@ import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
-import Navigation from "../Components/AdminPanelNav";
+import Navigation from "../../Components/AdminPanelNav";
 
-const Settings = () => {
+const Dashboard = () => {
   return (
-    <div className="App4">
+    <div className="App3">
       <Navigation />
-      <h2> Ustawienia</h2>
+      <h2>Settings</h2>
     </div>
   );
 };
 
-export default Settings;
+export default Dashboard;

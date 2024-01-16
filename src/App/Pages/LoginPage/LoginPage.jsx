@@ -3,14 +3,14 @@ import { useState } from "react";
 import "./styles.css";
 import Button from "@mui/material/Button";
 import { Link, useNavigate } from "react-router-dom";
-import Navigation from "../Components/NavigationLoginPage";
-import Banner2 from "../images/banner2.png";
+import Navigation from "../../Components/NavigationLoginPage";
+import Banner2 from "../../images/banner2.png";
 import {
   signInWithEmailAndPassword,
   onAuthStateChanged,
   signOut,
 } from "firebase/auth";
-import { auth } from "../../FireBase";
+import { auth } from "../../../FireBase";
 
 function App() {
   const [loginEmail, setLoginEmail] = useState("");

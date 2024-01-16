@@ -2,14 +2,14 @@ import { React, useEffect } from "react";
 import { useState } from "react";
 import "./styles.css";
 import { Link, useNavigate } from "react-router-dom";
-import Navigation from "../Components/NavigationLoginPage";
-import Banner2 from "../images/banner2.png";
+import Navigation from "../../Components/NavigationLoginPage";
+import Banner2 from "../../images/banner2.png";
 import {
   createUserWithEmailAndPassword,
   onAuthStateChanged,
   signOut,
 } from "firebase/auth";
-import { auth } from "../../FireBase";
+import { auth } from "../../../FireBase";
 
 function App() {
   const [registerEmail, setRegisterEmail] = useState("");
