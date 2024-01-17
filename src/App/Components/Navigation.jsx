@@ -31,41 +31,79 @@ function Navigation() {
     }
   };
 
-  return (
-    <div className="navigation">
-      <Button
-        className="btn-login"
-        variant="contained"
-        onClick={handleLoginClick}
-      >
-        Zaloguj
-      </Button>
-      <nav id="menu">
-        <input type="checkbox" id="responsive-menu" onClick="updatemenu()" />
-        <label></label>
-        <ul className="menu-background">
-          <li>
-            <a href="/">Strona Główna</a>
-          </li>
-          <li>
-            <a href="/">O nas</a>
-          </li>
-          <li>
-            <a href="/">Kontakt</a>
-          </li>
-          <li>
-            <a href="/">Pakiety ogłoszeń</a>
-          </li>
-          <li>
-            <a href="/">Dlaczego my</a>
-          </li>
-        </ul>
-      </nav>
-      <a href="/">
-        <img src={logo} className="logo" alt="logo" />
-      </a>
-    </div>
-  );
+  if (user) {
+    return (
+      <div className="navigation">
+        <Button
+          className="btn-login"
+          variant="contained"
+          onClick={handleLoginClick}
+        >
+          Przejdź do Panelu
+        </Button>
+        <nav id="menu">
+          <input type="checkbox" id="responsive-menu" onClick="updatemenu()" />
+          <label></label>
+          <ul className="menu-background">
+            <li>
+              <a href="/">Strona Główna</a>
+            </li>
+            <li>
+              <a href="/">O nas</a>
+            </li>
+            <li>
+              <a href="/">Kontakt</a>
+            </li>
+            <li>
+              <a href="/">Pakiety ogłoszeń</a>
+            </li>
+            <li>
+              <a href="/">Dlaczego my</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="/">
+          <img src={logo} className="logo" alt="logo" />
+        </a>
+      </div>
+    );
+  } else {
+    return (
+      <div className="navigation">
+        <Button
+          className="btn-login"
+          variant="contained"
+          onClick={handleLoginClick}
+        >
+          Zaloguj
+        </Button>
+        <nav id="menu">
+          <input type="checkbox" id="responsive-menu" onClick="updatemenu()" />
+          <label></label>
+          <ul className="menu-background">
+            <li>
+              <a href="/">Strona Główna</a>
+            </li>
+            <li>
+              <a href="/">O nas</a>
+            </li>
+            <li>
+              <a href="/">Kontakt</a>
+            </li>
+            <li>
+              <a href="/">Pakiety ogłoszeń</a>
+            </li>
+            <li>
+              <a href="/">Dlaczego my</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="/">
+          <img src={logo} className="logo" alt="logo" />
+        </a>
+      </div>
+    );
+  }
 }
 
 export default Navigation;

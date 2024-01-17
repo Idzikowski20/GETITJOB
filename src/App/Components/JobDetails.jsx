@@ -37,6 +37,7 @@ const JobDetails = () => {
 
   if (!jobDetails) {
     return (
+      // Efekt ładowania strony
       <div class="lds-ring">
         <div></div>
         <div></div>
@@ -131,34 +132,36 @@ const JobDetails = () => {
               )}{" "}
               {/* Zmieniona linia */}
             </div>
-            <img
-              className="companyimage"
-              src={companyimage}
-              alt="company image"
-            ></img>
-            <h1>Aplikuj na to stanowisko</h1>
-          </div>
-          <div className="offer-aplikuj-container">
-            <div className="offer-aplikuj">
-              <p>Imie</p>
-              <Input></Input>
-              <p>Nazwisko</p>
-              <Input></Input>
-              <p>E-mail</p>
-              <Input></Input>
-              <p>Numer telefonu</p>
-              <Input></Input>
-              <p>Plik CV</p>
-              <Button id="btn-explore" variant="contained">
-                Wgraj plik CV
-              </Button>
-              <div className="checkbox-aplikuj">
-                <p>Akceptuje warunki rekrutacyjne</p>
-                <input type="checkbox" id="aplikuj" />
+            <div className="aplicate">
+              <img
+                className="companyimage"
+                src={companyimage}
+                alt="company image"
+              ></img>
+              <h1>Aplikuj na to stanowisko</h1>
+            </div>
+            <div className="offer-aplikuj-container">
+              <div className="offer-aplikuj">
+                <p>Imie</p>
+                <Input></Input>
+                <p>Nazwisko</p>
+                <Input></Input>
+                <p>E-mail</p>
+                <Input></Input>
+                <p>Numer telefonu</p>
+                <Input></Input>
+                <p>Plik CV</p>
+                <Button id="btn-explore" variant="contained">
+                  Wgraj plik CV
+                </Button>
+                <div className="checkbox-aplikuj">
+                  <p>Akceptuje warunki rekrutacyjne</p>
+                  <input type="checkbox" id="aplikuj" />
+                </div>
+                <Button id="btn-explore" variant="contained">
+                  Aplikuj
+                </Button>
               </div>
-              <Button id="btn-explore" variant="contained">
-                Aplikuj
-              </Button>
             </div>
           </div>
         </div>

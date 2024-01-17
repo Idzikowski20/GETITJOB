@@ -27,6 +27,9 @@ const AdminPanelMenu = () => {
         <Link to="/Dashboard">
           <button className="adminpanelmenu-panels">Dashboard</button>
         </Link>
+        <Link to="/">
+          <button className="adminpanelmenu-panels">Strona główna</button>
+        </Link>
         <Link to="/Dashboard">
           <button className="adminpanelmenu-panels">Sprawdź statystyki</button>
         </Link>
