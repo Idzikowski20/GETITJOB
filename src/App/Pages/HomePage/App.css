@@ -18,6 +18,11 @@ a {
   width: 150px;
 }
 
+.aplicate {
+  display: flex;
+  flex-direction: column;
+}
+
 .banner-img {
   border-top: 2px solid #05375f;
   border-bottom: 2px solid #05375f;
@@ -275,7 +280,11 @@ a {
   justify-content: center;
 }
 .offer-h1 {
+  align-items: center;
+  justify-content: center;
+  display: flex;
   text-align: center;
+  background: #121828;
 }
 
 .offer-top {
@@ -318,13 +327,10 @@ a {
 
 .offer-aplikuj-container {
   margin-top: 10px;
-  margin-bottom: 50px;
   flex-direction: row;
   display: flex;
-  justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 500px;
+  width: 20%;
   display: flex;
 }
 
