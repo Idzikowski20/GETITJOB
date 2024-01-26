@@ -28,7 +28,7 @@ const Navigation = () => {
         <div className="SignInUser">
           <p>Witaj! 👋</p>
           {user?.email}
-          <Link to="/Dashboard">
+          <Link to="/dashboard">
             <button className="adminpanelmenu-panels-offer">
               Dodaj Oferte +{" "}
             </button>

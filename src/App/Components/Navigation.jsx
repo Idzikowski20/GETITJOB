@@ -23,23 +23,22 @@ function Navigation() {
     if (user) {
       // Jeśli użytkownik jest zalogowany, przekieruj na stronę AdminPanel
       alert("Zostałeś automatycznie zalogowany");
-      navigate("/AdminPanel");
+      navigate("/adminpanel");
     } else {
       // Jeśli użytkownik nie jest zalogowany, przekieruj na stronę logowania
       console.log("Aby uzyskać dostęp do tej strony - zaloguj się.");
-      navigate("/Login");
+      navigate("/choose-account");
     }
   };
 
   return (
     <div className="navigation">
-      <Button
-        className="btn-login"
-        variant="contained"
-        onClick={handleLoginClick}
-      >
+      <button className="btn-login" onClick={handleLoginClick}>
         Zaloguj
-      </Button>
+      </button>
+      <button className="btn-add-offer">
+        <a href="/login">Dodaj ogłoszenie +</a>
+      </button>
       <nav id="menu">
         <input type="checkbox" id="responsive-menu" onClick="updatemenu()" />
         <label></label>
@@ -55,9 +54,6 @@ function Navigation() {
           </li>
           <li>
             <a href="/">Pakiety ogłoszeń</a>
-          </li>
-          <li>
-            <a href="/">Dlaczego my</a>
           </li>
         </ul>
       </nav>

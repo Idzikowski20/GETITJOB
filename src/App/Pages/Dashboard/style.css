@@ -32,11 +32,6 @@ body {
   background: #252525;
 }
 
-.search-icon {
-  top: 50%;
-  transform: translate(0, -50%);
-}
-
 .card-stack-border {
   border-bottom: 2px solid #696969;
 }

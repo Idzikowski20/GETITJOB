@@ -14,16 +14,17 @@ a {
   min-height: 100vh;
 }
 
-.register-container {
+.login-container {
   text-align: center;
   margin: 10px;
   width: 100%;
   justify-content: center;
   display: flex;
   align-items: center;
+  height: 600px;
 }
 
-.register-box {
+.login-box {
   top: -100px;
   position: relative;
   display: flex;
@@ -72,11 +73,6 @@ a {
 .imagebox {
 }
 
-.login-container {
-  margin: 50px;
-  display: flex;
-}
-
 .mainContainer {
   flex-direction: column;
   display: flex;
@@ -85,7 +81,7 @@ a {
   height: 100vh;
 }
 
-.titleContainer {
+.titleContainer2 {
   display: flex;
   flex-direction: column;
   font-size: 64px;
@@ -154,7 +150,6 @@ a {
 }
 
 .inputButton {
-  margin-right: 15px;
   font-size: 20px;
   color: #fff;
   background: #3f5eb3;
@@ -179,16 +174,20 @@ a {
   border-radius: 20px;
 }
 
-.titleContainer {
+.titleContainer2 {
+  top: 30px;
   position: relative;
 }
 
-.titleContainerP {
+.titleContainerP2 {
   top: -70px;
-  left: 70px;
+  left: 80px;
   position: relative;
   font-size: 20px;
 }
+
+
+
 /* ////////////////////////////////////////////////////////////////////// */
 /*                                      MEDIA */
 /* ////////////////////////////////////////////////////////////////////// */
@@ -214,7 +213,7 @@ a {
     min-height: 100vh;
   }
 
-  .register-container {
+  .login-container {
     flex-direction: column;
     text-align: center;
     margin: 10px;
@@ -228,7 +227,7 @@ a {
     right: 20px;
   }
 
-  .register-box {
+  .login-box {
     top: -100px;
     position: relative;
     display: flex;
@@ -268,11 +267,6 @@ a {
   }
 
   .imagebox {
-  }
-
-  .login-container {
-    margin: 50px;
-    display: flex;
   }
 
   .mainContainer {

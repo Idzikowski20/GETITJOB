@@ -1,247 +1,133 @@
-@import url(https://fonts.googleapis.com/css?family=Khula:700);
-
 a {
   text-decoration: none;
   color: #fff;
 }
 
-:root {
-  --retool-canvas-max-width: auto;
-}
-
-.App {
+.App2 {
   color: #fff;
   background: #121828;
 }
 
-.logo {
-  width: 150px;
-}
-
-.banner-img {
-  border-top: 2px solid #05375f;
-  border-bottom: 2px solid #05375f;
-  width: 100%;
-  transition: all 0.5s ease-in-out;
-  box-shadow: 4px 17px 40px 10px #05375f;
-}
-.banner-img:hover {
-  border-top: 2px solid #05375f;
-  border-bottom: 2px solid #05375f;
-  transform: scale(101%);
-  box-shadow: 4px 9px 40px 10px #164c79;
-}
-
-.banner-text {
-  width: 600px;
-  font-size: 20px;
-  right: -60px;
-  top: -300px;
-  position: relative;
-}
-
-.btn-add-offer {
-  font-weight: 900;
-  font-size: 15px;
-  border: 3px solid #c8cfe7;
+.adminpanelmenu-container {
+  padding: 20px;
   border-radius: 10px;
-  background: none;
-  padding: 15px;
-}
-
-.btn-add-offer a {
-  padding: 0 14px;
-  color: #a1d385;
-}
-
-.loading-animation {
-  position: absolute;
-  top: 0;
-  left: 635px;
-}
-
-.btn-login {
-  font-weight: 700;
-  font-size: 20px;
-  border: 3px solid #c8cfe7;
-  border-radius: 10px;
-  background: none;
-  padding: 15px;
-  color: #fff;
-  cursor: pointer;
-}
-
-.hidden {
-  opacity: 0;
-}
-.console-container {
-  font-family: Khula;
-  font-size: 4em;
-  text-align: center;
-  height: 200px;
-  width: 600px;
-  display: block;
-  position: absolute;
-  color: white;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-}
-.console-underscore {
-  display: inline-block;
-  position: relative;
-  top: -0.14em;
-  left: 10px;
-}
-
-.banner-text h2 {
-  font-size: 35px;
-}
-
-.banner-img h2 {
-  text-align: center;
-  align-items: center;
-  display: flex;
-  font-size: 60px;
-  margin: 0;
-}
-
-.App-header {
-  background: #121828;
-  font-size: calc(10px + 2vmin);
-  color: rgb(0, 0, 0);
-}
-#btn-explore {
-  margin: 5px;
-}
-
-.btn-back2 {
+  border-top: 2px solid grey;
+  border-bottom: 2px solid grey;
+  margin: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
-.btn-back {
-  display: flex;
+.adminpanelmenu-panels {
+  cursor: pointer;
+  border-radius: 50px;
+  margin: 20px;
   justify-content: center;
   align-items: center;
-}
-
-.btn-back a {
-  top: -70px;
-  left: 0;
-  position: relative;
+  display: flex;
   text-align: center;
-  border-radius: 40px;
-  margin: 10px;
-  padding: 10px;
-  border: 2px dotted rgb(43, 110, 155);
-  transition: all 0.5s ease-in-out;
-}
-
-.btn-back2 a {
-  top: 50px;
-  left: 0;
-  position: relative;
-  text-align: center;
-  border-radius: 40px;
-  margin: 10px;
-  padding: 10px;
-  border: 2px dotted rgb(43, 110, 155);
-  transition: all 0.5s ease-in-out;
-}
-
-.btn-back2 a:hover {
-  left: 0;
-  position: relative;
-  text-align: center;
-  border-radius: 40px;
-  margin: 10px;
-  padding: 10px;
-  border: 2px dotted rgb(43, 110, 155);
-  transform: scale(105%);
-}
-
-.btn-back a:hover {
-  text-align: center;
-  border-radius: 40px;
-  margin: 10px;
-  padding: 10px;
-  border: 2px dotted rgb(47, 147, 214);
-  transform: scale(105%);
-}
-
-.lds-ring {
-  display: inline-block;
-  position: relative;
-  width: 80px;
-  height: 80px;
-}
-.lds-ring div {
-  box-sizing: border-box;
-  display: block;
-  position: absolute;
-  width: 64px;
-  height: 64px;
-  margin: 8px;
-  border: 8px solid #fff;
-  border-radius: 50%;
-  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-  border-color: #fff transparent transparent transparent;
-}
-.lds-ring div:nth-child(1) {
-  animation-delay: -0.45s;
-}
-.lds-ring div:nth-child(2) {
-  animation-delay: -0.3s;
-}
-.lds-ring div:nth-child(3) {
-  animation-delay: -0.15s;
-}
-@keyframes lds-ring {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-.welcome-center {
-  top: -200px;
+  background: #324374;
+  width: 200px;
+  height: 100px;
   color: #fff;
-  position: relative;
-  text-align: center;
-  display: flow;
+  font-size: 20px;
+  text-shadow: 3px 3px 3px black;
+  transition: all 0.3s ease-in-out;
 }
 
-.btn-banner {
+.adminpanelmenu-logout:hover {
   cursor: pointer;
+  border-radius: 50px;
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  background: #bb3b41;
   color: #fff;
-  border: 3px dotted grey;
-  background: none;
-  width: 150px;
-  border-radius: 10px;
-  padding: 10px;
-  margin: 10px;
-  transition: all 0.5s ease-in-out;
-}
-.btn-banner:hover {
-  cursor: pointer;
-  color: #fff;
-  border: 3px dotted grey;
-  background: none;
-  width: 150px;
-  border-radius: 10px;
-  padding: 10px;
-  margin: 10px;
-  transition: all 0.5s ease-in-out;
+  font-size: 20px;
+  text-shadow: 3px 3px 3px black;
   transform: scale(103%);
 }
 
-.searchbar-desc {
+.adminpanelmenu-logout {
+  cursor: pointer;
+  border-radius: 50px;
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  background: #972a2f;
+  width: 200px;
+  height: 100px;
+  color: #fff;
+  font-size: 20px;
+  text-shadow: 3px 3px 3px black;
+  transition: all 0.3s ease-in-out;
+}
+
+.adminpanelmenu-panels:hover {
+  border-radius: 50px;
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  background: #45578b;
+  color: #fff;
+  font-size: 20px;
+  text-shadow: 3px 3px 3px black;
+  transform: scale(103%);
+}
+
+.adminpanelmenu-panels-offer {
+  cursor: pointer;
+  border-radius: 50px;
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  background: #27915c;
+  width: 200px;
+  height: 60px;
+  color: #fff;
+  font-size: 20px;
+  text-shadow: 3px 3px 3px black;
+  transition: all 0.3s ease-in-out;
+}
+
+.adminpanelmenu-panels-offer:hover {
+  cursor: pointer;
+  border-radius: 50px;
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  background: #3fb178;
+  color: #fff;
+  font-size: 20px;
+  text-shadow: 3px 3px 3px black;
+  transform: scale(103%);
+}
+
+.adminpanelmenu {
+  display: flex;
+}
+
+.searchbar2 {
+  background: #121828;
+  position: relative;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.searchbar2-desc {
   font-weight: 800;
   color: #fff;
   justify-content: space-around;
@@ -250,323 +136,21 @@ a {
   display: flex;
 }
 
-.select {
-  border-radius: 30px;
-  border: 5px solid grey;
-  background: #121828;
-  text-align: center;
-  color: grey;
-  height: 62px;
-  width: 302px;
-}
-
-.search-icon {
-  margin-right: 10px;
-  width: 50px;
-  height: 50px;
-}
-
-.searchbar {
-  top: -150px;
-  background: #121828;
-  position: relative;
-  margin-top: 40px;
-  display: flex;
-  justify-content: center;
-}
-.offer-h1 {
-  text-align: center;
-}
-
-.offer-top {
-  border-radius: 40px;
-  background: #1e2433;
-  width: 100%;
-  border-bottom: 1px solid grey;
-  display: flex;
-  text-align: center;
-  justify-content: flex-start;
+.InputUserSignIn {
   align-items: center;
-  text-align: center;
-  justify-content: flex-start;
-  align-items: center;
-  transition: all 0.5s ease-in-out;
-}
-
-.offer-top:hover {
-  border-radius: 40px;
-  background: #1e2433;
-  width: 100%;
-  border-bottom: 5px solid rgb(22, 137, 214);
-  display: flex;
-  text-align: center;
-  justify-content: flex-start;
-  align-items: center;
-  transform: scale(102%);
-}
-
-.offer-mid-container {
-  margin-top: 20px;
-  flex-direction: row;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 500px;
-  display: flex;
-}
-
-.offer-aplikuj-container {
-  margin-top: 10px;
-  margin-bottom: 50px;
-  flex-direction: row;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 500px;
-  display: flex;
-}
-
-.flex {
-  display: flex;
-}
-
-.companyimagetop {
-  top: 15px;
-  position: relative;
-  height: 200px;
-  width: 580px;
-}
-
-.companyimage {
-  border-bottom: 3px solid grey;
-  top: 50px;
-  position: relative;
-  transition: all 0.5s ease-in-out;
-}
-
-.companyimage:hover {
-  border-bottom: 3px solid rgb(61, 107, 233);
-  top: 50px;
-  position: relative;
-  transform: scale(103%);
-}
-
-.offer-aplikuj {
-  flex-direction: column;
-  margin: 30px;
-  border-radius: 30px;
-  width: 100%;
-  background: #1e2433;
-  border-top: 1px solid grey;
-  border-bottom: 1px solid grey;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.5s ease-in-out;
-}
-
-.offer-aplikuj:hover {
-  margin: 30px;
-  border-radius: 30px;
-  width: 100%;
-  background: #1e2433;
-  border-top: 4px solid grey;
-  border-bottom: 4px solid grey;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  transform: scale(101%);
-}
-
-.offer-mid {
-  padding: 20px;
-  margin: 20px;
-  border-radius: 30px;
-  height: 100%;
-  width: 100%;
-  background: #1e2433;
-  border-top: 1px solid grey;
-  border-bottom: 1px solid grey;
-  display: flex;
-  text-align: justify;
-  justify-content: center;
-  align-items: flex-start;
-  transition: all 0.5s ease-in-out;
-}
-
-.offer-mid:hover {
-  background: #1e2433;
-  border-top: 4px solid grey;
-  border-bottom: 4px solid grey;
-  transform: scale(101%);
-}
-
-.offer-mid2 {
-  border-radius: 30px;
-  height: 100%;
-  width: 60%;
-  background: #1e2433;
-  border-top: 1px solid grey;
-  border-bottom: 1px solid grey;
-  display: flex;
-  text-align: justify;
-  justify-content: center;
-  align-items: flex-start;
-  transition: all 0.5s ease-in-out;
-}
-
-.offer-mid2:hover {
-  background: #1e2433;
-  border-top: 4px solid grey;
-  border-bottom: 4px solid grey;
-  transform: scale(101%);
-}
-
-.offer-mid-card {
-  margin: 15px;
-}
-
-.template_Container2 {
-  top: 200px;
-  position: relative;
-}
-
-.offer-location {
-}
-
-.offer-form-price {
-  width: 100%;
-  justify-content: space-between;
-  align-items: flex-end;
-  flex-wrap: wrap;
-  display: flex;
-}
-
-.offer-form-price p {
-  font-size: 20px;
-}
-
-.offer-title {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  border-bottom: 1px solid grey;
-}
-
-.offer-moredetails {
-  min-height: 100vh;
-  align-items: normal;
-  flex-direction: column;
   justify-content: center;
   display: flex;
+}
+
+.SignInUser {
   color: #fff;
-  width: 90%;
   position: relative;
-}
-
-.jobdetails-container {
-  border: 1px solid grey;
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  align-items: flex-start;
-  padding: 10px;
-}
-
-.jobdetails-title {
-  display: flex;
-  justify-content: space-between;
-}
-
-.price p {
-  color: #9bdf5b;
-  margin-bottom: 0px;
-  margin-bottom: 0px;
-}
-
-.offer-description {
+  height: 60px;
+  align-items: center;
   justify-content: center;
   display: flex;
-  align-items: center;
-}
-
-.offer-description p {
-  padding: 5px;
-  border-radius: 30px;
-  margin: 15px;
-  border: 1px solid #b1f1d1;
-}
-
-#searchInput {
-  border-radius: 30px;
-  border: 5px solid grey;
-  background: #121828;
-  text-align: center;
-  color: grey;
-  height: 50px;
-  width: 302px;
-}
-
-#select-jobcategory {
-  border: 5px solid grey;
-  background: #121828;
-  text-align: center;
-  color: grey;
-  height: 62px;
-  width: 302px;
-}
-
-#select-workform {
-  border: 5px solid grey;
-  background: #121828;
-  text-align: center;
-  color: grey;
-  height: 62px;
-  width: 302px;
-}
-
-.searchInput_Container {
-  margin-bottom: 50px;
-  display: flex;
-}
-
-.offer-image-title {
-  min-width: 200px;
-  max-width: 250px;
-}
-
-.offer-image-title img {
-  position: relative;
-  top: 20px;
-}
-
-.template img {
-  margin: 10px;
-  border-radius: 10px;
-}
-
-.template h4 {
-  font-size: 30px;
-}
-
-.template:hover {
-}
-
-.jobcard-offer p {
-  margin: 0px;
-  font-size: 20px;
-  color: grey;
-}
-
-.jobcard-widthraw p {
-  font-size: 15px;
+  border-radius: 40px;
   padding: 15px;
-  border: 3px solid grey;
 }
 
 .price {
@@ -590,7 +174,7 @@ a {
 
 h1 {
   color: hsl(0, 0%, 28%);
-  font-size: 40px;
+  font-size: 30px;
   font-weight: bold !important;
   font-family: monospace;
   letter-spacing: 7px !important;
@@ -672,16 +256,24 @@ h1 {
 }
 #menu ul {
   width: 100%;
-  text-align: right;
+  text-align: center;
 }
 #menu li {
+  padding: 5px;
+  margin-right: 15px;
   display: inline-block;
   position: relative;
+  border-radius: 15px;
+  background: #c8cfe7;
 }
 
 #menu li:hover {
+  padding: 5px;
+  margin-right: 15px;
   display: inline-block;
   position: relative;
+  border-radius: 15px;
+  background: #eaecf1;
 }
 
 #menu a {
@@ -689,7 +281,7 @@ h1 {
   line-height: 45px;
   padding: 0 14px;
   text-decoration: none;
-  color: #ffffff;
+  color: #167594;
   font-size: 25px;
 }
 #menu a.dropdown-arrow:after {
@@ -697,7 +289,6 @@ h1 {
   margin-left: 5px;
 }
 #menu li a:hover {
-  border-radius: 30px;
   color: #0099cc;
   background: #f2f2f2;
 }
@@ -752,23 +343,6 @@ h1 {
   #menu {
     right: 30px;
     position: relative;
-  }
-
-  .banner-text {
-    text-align: center;
-    width: 100%;
-    font-size: 15px;
-    right: 0;
-    top: -240px;
-    position: relative;
-  }
-
-  .btn-add-offer {
-    display: none;
-  }
-
-  .banner-text h2 {
-    font-size: 22px;
   }
 
   .companyimage {
@@ -995,24 +569,23 @@ h1 {
     transition: all 0.5s ease-in-out;
   }
 
-  .searchbar {
+  .searchbar2 {
     top: -235px;
     display: flex;
     justify-content: center;
   }
 
-  .searchbar p,
+  .searchbar2 p,
   h4 {
     font-size: 10px;
   }
 
-  .searchbar img {
+  .searchbar2 img {
     width: 50px;
     height: 50px;
   }
 
   .template_Container {
-    background: #121828;
     margin-top: 15px;
   }
 
@@ -1028,8 +601,12 @@ h1 {
   }
 
   .banner-img {
-    width: fit-content;
-    height: 300px;
+    width: 247.46px;
+    height: 192px;
+  }
+
+  .navigtion {
+    justify-content: left;
   }
 
   .welcome-center {
@@ -1037,13 +614,13 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    top: 60px;
     position: relative;
     margin-bottom: 50px;
   }
 
   .welcome-center h1 {
-    font-weight: bold;
-    font-size: 25px;
+    font-size: 30px;
   }
 
   .logo {
@@ -1095,5 +672,6 @@ h1 {
   .menu-background {
     background: #1e2433;
     border-radius: 20px;
+    background: #1e2433;
   }
 }

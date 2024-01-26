@@ -37,11 +37,13 @@ const JobDetails = () => {
 
   if (!jobDetails) {
     return (
-      <div class="lds-ring">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+      <div className="loading-animation">
+        <div class="lds-ring">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
       </div>
     );
   }

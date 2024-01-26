@@ -1,11 +1,13 @@
 // App.jsx
-import { useState, useEffect } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
-import LoginPage from "./App/Pages/LoginPage/LoginPage";
+import LoginAdmin from "./App/Pages/LoginAdmin/LoginAdmin";
+import LoginUser from "./App/Pages/LoginUser/LoginUser";
+import ChooseAccount from "./App/Pages/ChooseAccount/ChooseAccount";
 import HomePage from "./App/Pages/HomePage/HomePage";
 import JobDetails from "./App/Components/JobDetails";
 import RegisterPage from "./App/Pages/RegisterPage/RegisterPage";
-import AdminPanel from "./App/Pages/AdminPanel/index";
+import AdminPanel from "./App/Pages/AdminPanel/AdminPanel";
+import UserPanel from "./App/Pages/UserPanel/UserPanel";
 import Dashboard from "./App/Pages/Dashboard/Dashboard";
 import Settings from "./App/Pages/Settings/Settings";
 import ProtectedPage from "./App/Components/ProtectedPage";
@@ -23,12 +25,15 @@ function App() {
           />
           <Route path="/protected" element={<ProtectedPage />} />
           <Route path="//*" element={<HomePage />} />
-          <Route path="/login" element={<LoginPage />} />
+          <Route path="/login-admin" element={<LoginAdmin />} />
+          <Route path="/login-user" element={<LoginUser />} />
+          <Route path="/choose-account" element={<ChooseAccount />} />
           <Route path="/register" element={<RegisterPage />} />
-          <Route path="/AdminPanel/*" element={<AdminPanel />} />
+          <Route path="/adminpanel/*" element={<AdminPanel />} />
+          <Route path="/userpanel/*" element={<UserPanel />} />
           <Route path="/job/:jobId" element={<JobDetails />} />
-          <Route path="/Dashboard" element={<Dashboard />} />
-          <Route path="/Settings" element={<Settings />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/settings" element={<Settings />} />
         </Routes>
       </AuthProvider>
     </div>
