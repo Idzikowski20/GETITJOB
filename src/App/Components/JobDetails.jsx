@@ -4,7 +4,7 @@ import { useParams, Link } from "react-router-dom";
 import data from "./JobOfferts.json";
 import { Input } from "@mui/material";
 import companyimage from "../images/companyimage.png";
-import Navigation from "./Navigation";
+import Navigation from "./Navigation/Navigation";
 import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "../../FireBase";
 
