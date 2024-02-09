@@ -1,0 +1,72 @@
+@import url("https://fonts.cdnfonts.com/css/public-pixel");
+
+.monthlyoffert {
+  margin: 15px;
+  height: 200px;
+  border-radius: 40px;
+  width: 460px;
+  border-top: 1px solid rgb(224, 195, 29);
+  border-bottom: 1px solid rgb(224, 195, 29);
+  display: flex;
+  text-align: center;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  justify-content: flex-start;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.monthlyoffert:hover {
+  margin: 15px;
+  height: 200px;
+  border-radius: 40px;
+  width: 460px;
+  display: flex;
+  text-align: center;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  justify-content: flex-start;
+  align-items: center;
+  transform: scale(103%);
+}
+
+.monthly_Container {
+  margin-top: 70px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+}
+
+.monthly-inside {
+  border-radius: 40px;
+  background: #1e2433;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  justify-content: flex-start;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.Monthlyjoblist {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.monthly-h2 {
+  text-shadow: 1px 1px 2px rgb(207, 199, 201);
+  color: greenyellow;
+  top: 50px;
+  position: relative;
+  text-align: center;
+  font-family: "Public Pixel", sans-serif;
+  margin-bottom: 20px;
+}

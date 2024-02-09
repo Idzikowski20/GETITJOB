@@ -1,5 +1,5 @@
 // App.jsx
-import { Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import LoginAdmin from "./App/Pages/LoginAdmin/LoginAdmin";
 import LoginUser from "./App/Pages/LoginUser/LoginUser";
 import ChooseAccount from "./App/Pages/ChooseAccount/ChooseAccount";
@@ -10,7 +10,6 @@ import AdminPanel from "./App/Pages/AdminPanel/AdminPanel";
 import UserPanel from "./App/Pages/UserPanel/UserPanel";
 import Dashboard from "./App/Pages/Dashboard/Dashboard";
 import Settings from "./App/Pages/Settings/Settings";
-import ProtectedPage from "./App/Components/ProtectedPage";
 import { AuthProvider } from "./AuthContext";
 import "firebase/auth";
 
@@ -19,11 +18,6 @@ function App() {
     <div>
       <AuthProvider>
         <Routes>
-          <Route
-            path="/protected"
-            element={<ProtectedPage element={<AdminPanel />} />}
-          />
-          <Route path="/protected" element={<ProtectedPage />} />
           <Route path="//*" element={<HomePage />} />
           <Route path="/login-admin" element={<LoginAdmin />} />
           <Route path="/login-user" element={<LoginUser />} />

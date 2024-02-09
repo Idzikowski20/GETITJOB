@@ -10,6 +10,10 @@ a {
 }
 
 .App {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
   color: #fff;
   background: #121828;
 }
@@ -19,30 +23,27 @@ a {
 }
 
 .aplicate {
+  align-items: center;
+  justify-content: center;
   display: flex;
   flex-direction: column;
 }
 
 .banner-img {
-  border-top: 2px solid #05375f;
-  border-bottom: 2px solid #05375f;
-  width: 100%;
-  transition: all 0.5s ease-in-out;
-  box-shadow: 4px 17px 40px 10px #05375f;
 }
-.banner-img:hover {
-  border-top: 2px solid #05375f;
-  border-bottom: 2px solid #05375f;
-  transform: scale(101%);
-  box-shadow: 4px 9px 40px 10px #164c79;
+
+.banner {
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  display: flex;
+  font-size: 20px;
+  position: relative;
 }
 
 .banner-text {
-  width: 600px;
-  font-size: 20px;
-  right: -60px;
-  top: -300px;
-  position: relative;
+  margin-left: 100px;
 }
 
 .btn-add-offer {
@@ -61,7 +62,7 @@ a {
 
 .loading-animation {
   position: absolute;
-  top: 0;
+  top: 230px;
   left: 635px;
 }
 
@@ -103,14 +104,6 @@ a {
 
 .banner-text h2 {
   font-size: 35px;
-}
-
-.banner-img h2 {
-  text-align: center;
-  align-items: center;
-  display: flex;
-  font-size: 60px;
-  margin: 0;
 }
 
 .App-header {
@@ -215,7 +208,9 @@ a {
 }
 
 .welcome-center {
-  top: -200px;
+  padding: 20px;
+  border-radius: 20px;
+  background: #252a37;
   color: #fff;
   position: relative;
   text-align: center;
@@ -272,7 +267,6 @@ a {
 }
 
 .searchbar {
-  top: -150px;
   background: #121828;
   position: relative;
   margin-top: 40px;
@@ -280,9 +274,10 @@ a {
   justify-content: center;
 }
 .offer-h1 {
+  flex-direction: column;
+  display: flex;
   align-items: center;
   justify-content: center;
-  display: flex;
   text-align: center;
   background: #121828;
 }
@@ -330,7 +325,7 @@ a {
   flex-direction: row;
   display: flex;
   align-items: center;
-  width: 20%;
+  width: 700px;
   display: flex;
 }
 
@@ -346,15 +341,15 @@ a {
 }
 
 .companyimage {
-  border-bottom: 3px solid grey;
+  width: 600px;
   top: 50px;
+  border-bottom: 3px solid grey;
   position: relative;
   transition: all 0.5s ease-in-out;
 }
 
 .companyimage:hover {
   border-bottom: 3px solid rgb(61, 107, 233);
-  top: 50px;
   position: relative;
   transform: scale(103%);
 }
@@ -594,40 +589,6 @@ a {
   align-items: center;
 }
 
-h1 {
-  color: hsl(0, 0%, 28%);
-  font-size: 40px;
-  font-weight: bold !important;
-  font-family: monospace;
-  letter-spacing: 7px !important;
-  text-transform: uppercase;
-}
-
-h1 {
-  padding: 64px;
-  background: linear-gradient(
-    to right,
-    #2366f5 10%,
-    hsl(0, 0%, 100%) 0,
-    hsl(0, 0%, 100%) 20%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: shine 6s infinite linear;
-}
-
-@keyframes shine {
-  0% {
-    background-position: 0;
-  }
-  50% {
-    background-position: 1150px;
-  }
-  100% {
-    background-position: 2300px;
-  }
-}
-
 .navigation {
   background: #121828;
   padding: 10px;
@@ -762,10 +723,8 @@ h1 {
 
   .banner-text {
     text-align: center;
-    width: 100%;
     font-size: 15px;
     right: 0;
-    top: -240px;
     position: relative;
   }
 
@@ -1034,8 +993,6 @@ h1 {
   }
 
   .banner-img {
-    width: fit-content;
-    height: 300px;
   }
 
   .welcome-center {

@@ -107,8 +107,6 @@ const JobDetails = () => {
                 <p>✔️{jobDetails.requirements3}</p>
                 <p>✔️{jobDetails.requirements4}</p>
                 <p>✔️{jobDetails.requirements5}</p>
-                <p>✔️{jobDetails.requirements6}</p>
-                <p>✔️{jobDetails.requirements7}</p>
               </div>
             </div>
             <div className="offer-mid2">
@@ -118,7 +116,6 @@ const JobDetails = () => {
                 <p>✔️{jobDetails.Whatweoffer2}</p>
                 <p>✔️{jobDetails.Whatweoffer3}</p>
                 <p>✔️{jobDetails.Whatweoffer4}</p>
-                <p>✔️{jobDetails.Whatweoffer5}</p>
               </div>
             </div>
           </div>

@@ -3,10 +3,10 @@ import { MDBBtn, MDBContainer } from "mdb-react-ui-kit";
 
 const H1Welcome = () => {
   return (
-    <h1>
+    <h2>
       GET:ITJOB! Praca z widełkami - Zaoszczędź czas i znajdź szybko pracę w
       sektorze IT
-    </h1>
+    </h2>
   );
 };
 
